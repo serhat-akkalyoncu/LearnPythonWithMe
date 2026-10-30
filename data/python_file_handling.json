@@ -1,0 +1,37 @@
+{
+  "topic": "Python File Handling",
+  "order": 47,
+  "description": "Dosya İşleme (File Handling), web uygulamaları için önemli bir konudur. Python'da dosyaları okumak, yazmak, güncellemek ve silmek için temel fonksiyonlar vardır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "open() Fonksiyonu",
+      "explanation": "Python'da dosya açmak için temel işlev open() fonksiyonudur. İki parametre alır: dosya_adi ve kip(mode).",
+      "default_code": "# f = open('dosya.txt', 'r')\nprint('open() fonksiyonu bir dosya nesnesi döndürür.')"
+    },
+    {
+      "id": 2,
+      "title": "Dosya Açma Kipleri (Modlar)",
+      "explanation": "Bir dosyayı farklı amaçlarla açabiliriz: Okuma('r'), Ekleme('a'), Yazma('w'), Oluşturma('x').",
+      "default_code": "print('r: Okuma (Read) - Varsayılan\\nw: Yazma (Write)\\na: Ekleme (Append)\\nx: Yaratma (Create)')"
+    },
+    {
+      "id": 3,
+      "title": "Metin ve İkili (Binary) Modlar",
+      "explanation": "Dosyayı metin olarak 't' (text) veya resim/video gibi ikili 'b' (binary) olarak açabiliriz.",
+      "default_code": "print('rt: Text okuma (Varsayılan)\\nrb: İkili veri okuma (Örn: Resim dosyası)')"
+    },
+    {
+      "id": 4,
+      "title": "Hata Yakalama (Try-Except)",
+      "explanation": "Dosya işlemleri yaparken dosyanın olmama ihtimaline karşı try-except kullanmak her zaman iyidir.",
+      "default_code": "try:\n  f = open('olmayan_dosya.txt', 'r')\nexcept FileNotFoundError:\n  print('Hata: Böyle bir dosya bulunamadı!')"
+    },
+    {
+      "id": 5,
+      "title": "Dosya Kapatmak (close)",
+      "explanation": "Dosyayla işiniz bittiğinde belleği temizlemek ve dosyayı serbest bırakmak için .close() ile kapatmalısınız.",
+      "default_code": "# f = open('test.txt', 'r')\n# ... işlemler ...\n# f.close()\nprint('Açılan dosyalar her zaman kapatılmalıdır.')"
+    }
+  ]
+}

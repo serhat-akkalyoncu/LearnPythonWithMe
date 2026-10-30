@@ -1,0 +1,37 @@
+{
+  "topic": "Python Classes/Objects",
+  "order": 37,
+  "description": "Python'da neredeyse her şey bir nesnedir. Yeni bir nesne türü oluşturmak için 'class' (sınıf) anahtar kelimesi kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Sınıf Oluşturma",
+      "explanation": "class kelimesi ile sınıf adını yazarız. Sınıf isimleri genelde büyük harfle başlar.",
+      "default_code": "class BenimSinifim:\n  x = 5\n\nprint('Sınıf oluşturuldu!')"
+    },
+    {
+      "id": 2,
+      "title": "Nesne Üretme (Object Creation)",
+      "explanation": "Oluşturduğumuz sınıftan bir nesne (obje) yaratmak için sınıf adını parantez ile çağırırız.",
+      "default_code": "class BenimSinifim:\n  x = 5\n\np1 = BenimSinifim() # Nesne üretildi\nprint(p1.x)"
+    },
+    {
+      "id": 3,
+      "title": "Sınıf İçinde Birden Fazla Özellik",
+      "explanation": "Sınıfın içine birden fazla değişken (özellik) ekleyebilirsiniz.",
+      "default_code": "class Araba:\n  renk = 'Kırmızı'\n  marka = 'Toyota'\n\nbenim_arabam = Araba()\nprint(benim_arabam.renk, benim_arabam.marka)"
+    },
+    {
+      "id": 4,
+      "title": "Birden Fazla Nesne Üretmek",
+      "explanation": "Aynı sınıftan birbirinden bağımsız farklı nesneler üretebilirsiniz.",
+      "default_code": "class Araba:\n  tekerlek_sayisi = 4\n\naraba1 = Araba()\naraba2 = Araba()\nprint('Araba 1 tekerlek:', araba1.tekerlek_sayisi)\nprint('Araba 2 tekerlek:', araba2.tekerlek_sayisi)"
+    },
+    {
+      "id": 5,
+      "title": "Nesne Özelliğini Değiştirme",
+      "explanation": "Nesneyi ürettikten sonra ona ait özellikleri sonradan değiştirebilirsiniz.",
+      "default_code": "class Kedi:\n  isim = 'Henüz isim verilmedi'\n\nkedi1 = Kedi()\nkedi1.isim = 'Pamuk'\nprint('Kedimin adı:', kedi1.isim)"
+    }
+  ]
+}

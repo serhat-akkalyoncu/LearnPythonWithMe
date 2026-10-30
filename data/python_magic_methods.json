@@ -1,0 +1,37 @@
+{
+  "topic": "Python Magic Methods",
+  "order": 42,
+  "description": "Sihirli Metotlar (Magic/Dunder Methods), etrafı çift alt çizgi ile çevrili olan (__init__ gibi) ve Python tarafından arka planda özel durumlarda otomatik çağrılan metotlardır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "__str__ Metodu (Yazdırma)",
+      "explanation": "Bir nesneyi print() ile ekrana bastığımızda nasıl görüneceğini belirler.",
+      "default_code": "class Kitap:\n  def __init__(self, ad):\n    self.ad = ad\n  def __str__(self):\n    return f'Kitap Adı: {self.ad}'\n\nk = Kitap('Yüzüklerin Efendisi')\nprint(k)"
+    },
+    {
+      "id": 2,
+      "title": "__len__ Metodu (Uzunluk)",
+      "explanation": "len() fonksiyonunun kendi nesnemiz üzerinde çalışmasını sağlar.",
+      "default_code": "class Sepet:\n  def __init__(self):\n    self.urunler = ['Elma', 'Armut', 'Muz']\n  def __len__(self):\n    return len(self.urunler)\n\ns = Sepet()\nprint('Sepetteki ürün sayısı:', len(s))"
+    },
+    {
+      "id": 3,
+      "title": "__add__ Metodu (Toplama)",
+      "explanation": "+ operatörünü kullanarak iki nesnemizi nasıl toplayacağımızı belirleriz.",
+      "default_code": "class Kasa:\n  def __init__(self, para):\n    self.para = para\n  def __add__(self, diger_kasa):\n    return Kasa(self.para + diger_kasa.para)\n\nk1 = Kasa(100)\nk2 = Kasa(50)\ntoplam = k1 + k2\nprint('Toplam Para:', toplam.para)"
+    },
+    {
+      "id": 4,
+      "title": "__eq__ Metodu (Eşitlik)",
+      "explanation": "İki nesnenin (==) operatörü ile karşılaştırıldığında neye göre eşit sayılacağını belirler.",
+      "default_code": "class Insan:\n  def __init__(self, tc_no):\n    self.tc_no = tc_no\n  def __eq__(self, diger):\n    return self.tc_no == diger.tc_no\n\ni1 = Insan(12345)\ni2 = Insan(12345)\nprint('Aynı kişiler mi?', i1 == i2)"
+    },
+    {
+      "id": 5,
+      "title": "__call__ Metodu (Nesneyi Fonksiyon Yapma)",
+      "explanation": "Bir nesnenin yanına parantez koyup fonksiyon gibi çalıştırmanızı sağlar.",
+      "default_code": "class Selamlayici:\n  def __call__(self, isim):\n    print(f'Merhaba {isim}!')\n\nselam_obj = Selamlayici()\nselam_obj('Ali') # Nesneyi fonksiyon gibi çağırdık"
+    }
+  ]
+}

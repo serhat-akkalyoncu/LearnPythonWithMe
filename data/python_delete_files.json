@@ -1,0 +1,37 @@
+{
+  "topic": "Python Delete Files",
+  "order": 50,
+  "description": "Python'da bir dosyayı veya klasörü silmek için işletim sistemi (os) modülünü içe aktarmamız (import os) gerekir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Dosya Silmek (os.remove)",
+      "explanation": "Belirli bir dosyayı silmek için os.remove() kullanılır. Bu arayüzde güvenlik için dosya silme komutları kapalıdır.",
+      "default_code": "# import os\n# os.remove('silinecek_dosya.txt')\nprint('Dosya silindi (Simülasyon).')"
+    },
+    {
+      "id": 2,
+      "title": "Silmeden Önce Dosya Var Mı Kontrolü",
+      "explanation": "Olmayan bir dosyayı silmeye çalışırsanız hata alırsınız. Bu yüzden önce varlığını kontrol etmeliyiz.",
+      "default_code": "# import os\n# if os.path.exists('dosya.txt'):\n#   os.remove('dosya.txt')\n# else:\n#   print('Dosya bulunamadı.')\nprint('Dosya varlık kontrolü (Simülasyon).')"
+    },
+    {
+      "id": 3,
+      "title": "Boş Bir Klasörü Silmek (os.rmdir)",
+      "explanation": "Dosya değil de bir klasörü silmek istiyorsanız os.rmdir() kullanırsınız. (Klasör boş olmalıdır).",
+      "default_code": "# import os\n# os.rmdir('eski_klasor')\nprint('Klasör silindi (Simülasyon).')"
+    },
+    {
+      "id": 4,
+      "title": "Dolu Bir Klasörü Silmek",
+      "explanation": "İçi dolu bir klasörü os.rmdir ile silemezsiniz. Bunun için 'shutil' modülünü kullanmanız gerekir.",
+      "default_code": "# import shutil\n# shutil.rmtree('dolu_klasor')\nprint('İçi dolu klasör shutil.rmtree ile silinebilir.')"
+    },
+    {
+      "id": 5,
+      "title": "Güvenlik Notu",
+      "explanation": "os ve shutil gibi modüller, işletim sistemine doğrudan müdahale ettiği için dikkatli kullanılmalıdır.",
+      "default_code": "print('Dosya silme kodları geri dönüşümsüzdür (Çöp kutusuna gitmez, kalıcı silinir).')"
+    }
+  ]
+}

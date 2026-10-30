@@ -1,0 +1,37 @@
+{
+  "topic": "Python RegEx",
+  "order": 29,
+  "description": "Düzenli İfade (RegEx), bir dizge (string) içinde belirli bir arama deseni bulmak için kullanılır. Python'da 're' modülü ile çalışır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Arama Yapmak (search)",
+      "explanation": "Dizgede desen varsa Match nesnesi döndürür.",
+      "default_code": "import re\nmetin = 'İspanya da yağmur'\nx = re.search('^İspanya.*yağmur$', metin)\nif x:\n  print('Eşleşti!')\nelse:\n  print('Eşleşmedi.')"
+    },
+    {
+      "id": 2,
+      "title": "Tüm Eşleşmeleri Bulmak (findall)",
+      "explanation": "Tüm eşleşmeleri içeren bir liste döndürür.",
+      "default_code": "import re\nmetin = 'İspanya da yağmur'\nx = re.findall('a', metin)\nprint(x)\nprint('Bulunan a sayısı:', len(x))"
+    },
+    {
+      "id": 3,
+      "title": "Bölmek (split)",
+      "explanation": "Dizgeyi her eşleşmede böler.",
+      "default_code": "import re\nmetin = 'İspanya da yağmur'\n# Boşluk karakterlerine (\\s) göre böl\nx = re.split('\\\\s', metin)\nprint(x)"
+    },
+    {
+      "id": 4,
+      "title": "Değiştirmek (sub)",
+      "explanation": "Eşleşmeleri seçtiğiniz metinle değiştirir.",
+      "default_code": "import re\nmetin = 'İspanya da yağmur'\n# Boşlukları 9 sayısıyla değiştir\nx = re.sub('\\\\s', '9', metin)\nprint(x)"
+    },
+    {
+      "id": 5,
+      "title": "Eşleşme Detayları",
+      "explanation": "Match nesnesinden eşleşen kısmın indekslerini (span) alabilirsiniz.",
+      "default_code": "import re\nmetin = 'İspanya da yağmur'\nx = re.search(r'\\b[a-zyağmur]+', metin)\nprint(x.span())\nprint(x.group())"
+    }
+  ]
+}

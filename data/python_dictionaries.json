@@ -1,0 +1,37 @@
+{
+  "topic": "Python Dictionaries",
+  "order": 16,
+  "description": "Sözlükler, veri değerlerini anahtar:değer (key:value) çiftlerinde depolamak için kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Sözlük Oluşturma",
+      "explanation": "Süslü parantezler içinde anahtar-değer çiftleri yazılır.",
+      "default_code": "sozluk = {'marka': 'Ford', 'model': 'Mustang', 'yil': 1964}\nprint(sozluk)"
+    },
+    {
+      "id": 2,
+      "title": "Öğelere Erişme",
+      "explanation": "Anahtar (key) adı kullanılarak değere (value) erişilir.",
+      "default_code": "sozluk = {'marka': 'Ford', 'model': 'Mustang'}\nprint(sozluk['model'])"
+    },
+    {
+      "id": 3,
+      "title": "Değer Değiştirme",
+      "explanation": "Anahtar belirtilerek yeni değer atanır.",
+      "default_code": "sozluk = {'marka': 'Ford', 'yil': 1964}\nsozluk['yil'] = 2020\nprint(sozluk)"
+    },
+    {
+      "id": 4,
+      "title": "Öğe Ekleme",
+      "explanation": "Yeni bir indeks (anahtar) atayarak sözlüğe eklenebilir.",
+      "default_code": "sozluk = {'marka': 'Ford'}\nsozluk['renk'] = 'kırmızı'\nprint(sozluk)"
+    },
+    {
+      "id": 5,
+      "title": "Öğe Silme",
+      "explanation": "pop() metodu ile belirtilen anahtar silinir.",
+      "default_code": "sozluk = {'marka': 'Ford', 'model': 'Mustang'}\nsozluk.pop('model')\nprint(sozluk)"
+    }
+  ]
+}

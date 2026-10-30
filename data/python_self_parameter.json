@@ -1,0 +1,37 @@
+{
+  "topic": "Python self Parameter",
+  "order": 39,
+  "description": "self parametresi, sınıfın o anki nesnesine (kendisine) bir referanstır. Sınıfa ait değişkenlere ve metotlara erişmek için kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "self Ne İşe Yarar?",
+      "explanation": "Sınıf içindeki metotlar ilk parametre olarak her zaman kendini (self) almalıdır. Bu kuraldır.",
+      "default_code": "class Kopek:\n  def __init__(self, isim):\n    self.isim = isim # 'Benim ismim, dışarıdan gelen isimdir' demek\n\nk = Kopek('Karabaş')\nprint(k.isim)"
+    },
+    {
+      "id": 2,
+      "title": "Metotlar İçinde self Kullanımı",
+      "explanation": "Sınıfa ait bir fonksiyon (metot) yazarken içindeki özelliklere erişmek için yine self kullanılır.",
+      "default_code": "class Insan:\n  def __init__(self, isim):\n    self.isim = isim\n  \n  def selam_ver(self):\n    print('Merhaba, benim adım ' + self.isim)\n\np1 = Insan('Veli')\np1.selam_ver()"
+    },
+    {
+      "id": 3,
+      "title": "İsmi İlla 'self' mi Olmalı?",
+      "explanation": "Hayır, adı self olmak zorunda değildir. Ancak ilk parametre olmak ZORUNDADIR. (Yine de herkes self kullanır).",
+      "default_code": "class Insan:\n  def __init__(kendi_kelimem, isim):\n    kendi_kelimem.isim = isim\n  \n  def selam(kendi_kelimem):\n    print('Selam ben ' + kendi_kelimem.isim)\n\np = Insan('Ali')\np.selam()"
+    },
+    {
+      "id": 4,
+      "title": "self ile Özellikleri Güncelleme",
+      "explanation": "Metotlar aracılığıyla nesnenin kendi özelliklerini (self.ozellik) güncelleyebiliriz.",
+      "default_code": "class BankaHesabi:\n  def __init__(self, bakiye):\n    self.bakiye = bakiye\n    \n  def para_yatir(self, miktar):\n    self.bakiye += miktar\n\nhesap = BankaHesabi(100)\nhesap.para_yatir(50)\nprint('Yeni Bakiye:', hesap.bakiye)"
+    },
+    {
+      "id": 5,
+      "title": "self Olmadan Hata",
+      "explanation": "Sınıf içindeki metoda self eklemeyi unutursanız hata alırsınız.",
+      "default_code": "class Test:\n  # def hatali_metot(): \n  # print('Hata verecekti')\n  def dogru_metot(self):\n    print('İlk parametre self olduğu için çalışır.')\n\nt = Test()\nt.dogru_metot()"
+    }
+  ]
+}

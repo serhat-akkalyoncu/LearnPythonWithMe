@@ -1,0 +1,37 @@
+{
+  "topic": "Python If...Else",
+  "order": 17,
+  "description": "Karar yapıları, belirli koşulların doğru (True) veya yanlış (False) olmasına göre farklı kod bloklarını çalıştırır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "If İfadesi",
+      "explanation": "Koşul doğruysa blok çalışır.",
+      "default_code": "a = 33\nb = 200\nif b > a:\n  print('b, a\\'dan büyüktür')"
+    },
+    {
+      "id": 2,
+      "title": "Elif İfadesi",
+      "explanation": "Önceki koşullar doğru değilse bu koşulu dene.",
+      "default_code": "a = 33\nb = 33\nif b > a:\n  print('b büyüktür a')\nelif a == b:\n  print('a ve b eşittir')"
+    },
+    {
+      "id": 3,
+      "title": "Else İfadesi",
+      "explanation": "Hiçbir koşul sağlanmazsa else bloğu çalışır.",
+      "default_code": "a = 200\nb = 33\nif b > a:\n  print('b büyüktür')\nelse:\n  print('a büyüktür veya eşittir')"
+    },
+    {
+      "id": 4,
+      "title": "Kısa (Tek Satır) If",
+      "explanation": "Sadece if yürütülecekse tek satırda yazılabilir.",
+      "default_code": "if 200 > 33: print('200 büyüktür')"
+    },
+    {
+      "id": 5,
+      "title": "And ve Or ile Çoklu Koşul",
+      "explanation": "Birden fazla koşulu kontrol etmek için mantıksal operatörler kullanılır.",
+      "default_code": "a = 200\nb = 33\nc = 500\nif a > b and c > a:\n  print('Her iki koşul da doğru')"
+    }
+  ]
+}

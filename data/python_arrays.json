@@ -1,0 +1,37 @@
+{
+  "topic": "Python Arrays",
+  "order": 23,
+  "description": "Python'da yerleşik bir Dizi (Array) desteği yoktur, ancak Listeler dizi yerine kullanılabilir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Dizi Olarak Liste Kullanımı",
+      "explanation": "Aynı türdeki birden çok değeri tek bir değişkende tutar.",
+      "default_code": "arabalar = ['Ford', 'Volvo', 'BMW']\nprint(arabalar[0])"
+    },
+    {
+      "id": 2,
+      "title": "Dizi Uzunluğu (Len)",
+      "explanation": "Dizide kaç öğe olduğunu len() ile öğreniriz.",
+      "default_code": "arabalar = ['Ford', 'Volvo', 'BMW']\nprint(len(arabalar))"
+    },
+    {
+      "id": 3,
+      "title": "Öğe Ekleme (Append)",
+      "explanation": "Dizinin sonuna yeni bir öğe ekler.",
+      "default_code": "arabalar = ['Ford', 'Volvo']\narabalar.append('Honda')\nprint(arabalar)"
+    },
+    {
+      "id": 4,
+      "title": "Döngü ile Diziyi Gezme",
+      "explanation": "Dizideki her bir öğeyi sırayla işlemek için for döngüsü kullanılır.",
+      "default_code": "arabalar = ['Ford', 'Volvo', 'BMW']\nfor x in arabalar:\n  print(x)"
+    },
+    {
+      "id": 5,
+      "title": "Öğe Silme (Pop / Remove)",
+      "explanation": "Diziden öğe silmek için pop() veya remove() kullanılır.",
+      "default_code": "arabalar = ['Ford', 'Volvo', 'BMW']\narabalar.pop(1) # 1. indeks silinir\nprint(arabalar)"
+    }
+  ]
+}

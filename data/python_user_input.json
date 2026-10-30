@@ -1,0 +1,37 @@
+{
+  "topic": "Python User Input",
+  "order": 34,
+  "description": "Python, kullanıcıdan klavye aracılığıyla veri (girdi) alınmasını input() fonksiyonu ile sağlar.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Temel input()",
+      "explanation": "Kullanıcıdan veri bekler ve girdiği değeri string olarak değişkene atar. (Bu editörde desteklenmeyebilir, simülasyondur)",
+      "default_code": "# isim = input('Adınız nedir? ')\nisim = 'Sanal Kullanıcı'\nprint('Merhaba,', isim)"
+    },
+    {
+      "id": 2,
+      "title": "Sayısal Girdi (Casting)",
+      "explanation": "input() her zaman metin (string) döndürdüğü için sayıya çevirmek (int) gerekir.",
+      "default_code": "# yas = input('Yaşınız? ')\nyas = '25' # Simüle edilmiş girdi\nyas_sayi = int(yas)\nprint('Gelecek yıl', yas_sayi + 1, 'yaşında olacaksın.')"
+    },
+    {
+      "id": 3,
+      "title": "Float Girdi Alma",
+      "explanation": "Ondalıklı değer almak istiyorsanız float() kullanırsınız.",
+      "default_code": "# boy = input('Boyunuz (m)? ')\nboy_str = '1.75'\nboy = float(boy_str)\nprint(boy * 100, 'cm')"
+    },
+    {
+      "id": 4,
+      "title": "Çoklu Girdi (split)",
+      "explanation": "Kullanıcının boşlukla ayırarak girdiği kelimeleri bölebilirsiniz.",
+      "default_code": "# veri = input('İki kelime girin: ')\nveri = 'Python Harika'\nkelimeler = veri.split()\nprint(kelimeler[0])\nprint(kelimeler[1])"
+    },
+    {
+      "id": 5,
+      "title": "Editör Uyarısı",
+      "explanation": "Geliştirdiğimiz bu arayüzde doğrudan klavye etkileşimi olmadığı için input() donmalara yol açabilir, bu yüzden genelde kapalı tutulur.",
+      "default_code": "print('Web tabanlı Python derleyicilerinde input() özel işlemler gerektirir.')"
+    }
+  ]
+}

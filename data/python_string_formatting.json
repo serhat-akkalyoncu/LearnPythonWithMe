@@ -1,0 +1,37 @@
+{
+  "topic": "Python String Formatting",
+  "order": 32,
+  "description": "Farklı türlerdeki değerleri metinlerin içine yerleştirmek ve şekillendirmek için biçimlendirme yöntemleri kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "f-Strings (Önerilen)",
+      "explanation": "String'in başına f koyarak süslü parantez içine doğrudan değişken yazabilirsiniz.",
+      "default_code": "isim = 'Ali'\nyas = 30\nprint(f'Benim adım {isim} ve ben {yas} yaşındayım.')"
+    },
+    {
+      "id": 2,
+      "title": "f-String'de Hesaplama",
+      "explanation": "Süslü parantezler içinde doğrudan matematiksel işlem yapabilirsiniz.",
+      "default_code": "fiyat = 20\nprint(f'Toplam fiyat: {fiyat * 1.20} TL')"
+    },
+    {
+      "id": 3,
+      "title": "Format Metodu (format())",
+      "explanation": "Metnin sonuna .format() ekleyerek boş parantezlere değer göndeririz.",
+      "default_code": "fiyat = 49.95\nmetin = 'Ürünün fiyatı {} TL'\nprint(metin.format(fiyat))"
+    },
+    {
+      "id": 4,
+      "title": "İndeksli Format",
+      "explanation": "Format içine gönderilen değişkenlerin sırasına göre yerleştirme yapabilirsiniz.",
+      "default_code": "adet = 3\nesya = 'kalem'\nmetin = 'Ben {0} adet {1} aldım. (Evet {0} adet)'\nprint(metin.format(adet, esya))"
+    },
+    {
+      "id": 5,
+      "title": "Eski Yöntem (%)",
+      "explanation": "C dilinden gelen eski % biçimlendirmesi de desteklenir.",
+      "default_code": "isim = 'Veli'\nprint('Merhaba %s' % isim)"
+    }
+  ]
+}

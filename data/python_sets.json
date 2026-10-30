@@ -1,0 +1,37 @@
+{
+  "topic": "Python Sets",
+  "order": 15,
+  "description": "Set'ler sırasız, değiştirilemez (ancak öğe eklenebilir/silinebilir) ve indekslenmemiş koleksiyonlardır. Aynı değere sahip iki öğe barındırmaz.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Set Oluşturma",
+      "explanation": "Süslü parantez kullanılır.",
+      "default_code": "kume = {'elma', 'muz', 'kiraz'}\nprint(kume)"
+    },
+    {
+      "id": 2,
+      "title": "Tekrarlanan Öğeler",
+      "explanation": "Set'ler aynı değeri birden fazla kez barındırmaz.",
+      "default_code": "kume = {'elma', 'muz', 'elma'}\nprint(kume) # Sadece bir 'elma' görünür"
+    },
+    {
+      "id": 3,
+      "title": "Öğe Ekleme",
+      "explanation": "add() metodu ile öğe eklenir.",
+      "default_code": "kume = {'elma'}\nkume.add('portakal')\nprint(kume)"
+    },
+    {
+      "id": 4,
+      "title": "Öğe Silme",
+      "explanation": "remove() metodu ile silinir.",
+      "default_code": "kume = {'elma', 'muz'}\nkume.remove('elma')\nprint(kume)"
+    },
+    {
+      "id": 5,
+      "title": "Setleri Birleştirme",
+      "explanation": "union() metodu iki seti birleştirir.",
+      "default_code": "kume1 = {'a', 'b', 'c'}\nkume2 = {1, 2, 3}\nkume3 = kume1.union(kume2)\nprint(kume3)"
+    }
+  ]
+}

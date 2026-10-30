@@ -1,0 +1,37 @@
+{
+  "topic": "Python Output",
+  "order": 4,
+  "description": "Python'da ekrana bir şeyler yazdırmak ve çıktı üretmek için temel olarak print() fonksiyonu kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Temel Çıktı",
+      "explanation": "Metinleri ekrana yazdırmak için tırnak işaretleri içinde print fonksiyonuna göndeririz.",
+      "default_code": "print('Python öğrenmek çok zevkli!')"
+    },
+    {
+      "id": 2,
+      "title": "Birden Fazla Değer Yazdırma",
+      "explanation": "print() fonksiyonuna virgülle ayırarak birden fazla değer verebilirsiniz.",
+      "default_code": "print('Elma', 'Armut', 'Muz')"
+    },
+    {
+      "id": 3,
+      "title": "Ayırıcı (Separator) Kullanımı",
+      "explanation": "sep parametresi ile kelimeler arasına boşluk yerine başka bir karakter koyabilirsiniz.",
+      "default_code": "print('01', '01', '2025', sep='-')"
+    },
+    {
+      "id": 4,
+      "title": "Sonlandırma (End) Kullanımı",
+      "explanation": "Normalde print() işlemi bitince alt satıra geçer. end parametresi ile alt satıra geçmesini engelleyebilirsiniz.",
+      "default_code": "print('Merhaba', end=' ')\nprint('Dünya!')"
+    },
+    {
+      "id": 5,
+      "title": "Değişkenler ile Metinleri Birleştirme",
+      "explanation": "+ operatörü veya f-string kullanarak değişkenleri metinlerle birleştirebilirsiniz.",
+      "default_code": "isim = 'Ali'\nprint(f'Benim adım {isim}.')"
+    }
+  ]
+}

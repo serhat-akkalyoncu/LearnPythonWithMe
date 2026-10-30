@@ -1,0 +1,37 @@
+{
+  "topic": "Python JSON",
+  "order": 28,
+  "description": "JSON (JavaScript Object Notation), veri depolamak ve alışverişi yapmak için kullanılan bir sözdizimidir. Python yerleşik bir json modülüne sahiptir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "JSON'dan Python'a (Parse)",
+      "explanation": "JSON metnini Python sözlüğüne çevirmek için json.loads() kullanılır.",
+      "default_code": "import json\nx =  '{ \"isim\":\"Ali\", \"yas\":30, \"sehir\":\"Ankara\"}'\ny = json.loads(x)\nprint(y[\"yas\"])"
+    },
+    {
+      "id": 2,
+      "title": "Python'dan JSON'a",
+      "explanation": "Python sözlüğünü JSON metnine çevirmek için json.dumps() kullanılır.",
+      "default_code": "import json\nx = {\"isim\": \"Ayşe\", \"yas\": 25, \"sehir\": \"İzmir\"}\ny = json.dumps(x)\nprint(y)"
+    },
+    {
+      "id": 3,
+      "title": "Formatlı Çıktı (Indent)",
+      "explanation": "JSON dizesini okunaklı yapmak için indent (girinti) parametresi eklenir.",
+      "default_code": "import json\nx = {\"a\": 1, \"b\": 2, \"c\": 3}\nprint(json.dumps(x, indent=4))"
+    },
+    {
+      "id": 4,
+      "title": "Ayırıcılar (Separators)",
+      "explanation": "Görünümü değiştirmek için separators kullanılabilir.",
+      "default_code": "import json\nx = {\"isim\": \"Can\"}\nprint(json.dumps(x, indent=4, separators=(\". \", \" = \")))"
+    },
+    {
+      "id": 5,
+      "title": "Farklı Tipleri Çevirme",
+      "explanation": "Liste, Tuple, String, Int vb. hepsi JSON'a çevrilebilir.",
+      "default_code": "import json\nprint(json.dumps(['elma', 'muz']))\nprint(json.dumps(42))\nprint(json.dumps(True))"
+    }
+  ]
+}

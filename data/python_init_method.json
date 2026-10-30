@@ -1,0 +1,37 @@
+{
+  "topic": "Python __init__ Method",
+  "order": 38,
+  "description": "__init__() metodu, diğer dillerdeki 'Constructor' (Yapıcı) metottur. Bir sınıftan yeni bir nesne üretildiğinde otomatik olarak ilk bu metot çalışır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "__init__ Metodu Nedir?",
+      "explanation": "Her sınıfın gizli bir __init__ metodu vardır. Nesne yaratılırken başlangıç değerlerini atamak için kullanılır.",
+      "default_code": "class Insan:\n  def __init__(self):\n    print('Yeni bir insan nesnesi dünyaya geldi!')\n\nali = Insan()"
+    },
+    {
+      "id": 2,
+      "title": "Özellikleri Başlangıçta Atama",
+      "explanation": "__init__ içine parametreler ekleyerek, nesne üretildiği anda özelliklerini verebiliriz.",
+      "default_code": "class Insan:\n  def __init__(self, isim, yas):\n    self.isim = isim\n    self.yas = yas\n\np1 = Insan('Ahmet', 36)\nprint(p1.isim)\nprint(p1.yas)"
+    },
+    {
+      "id": 3,
+      "title": "Sınıf Kalıbı Olarak __init__",
+      "explanation": "Bu yöntem sayesinde, nesneleri oluştururken değerleri zorunlu hale getirmiş oluruz.",
+      "default_code": "class Araba:\n  def __init__(self, marka, model):\n    self.marka = marka\n    self.model = model\n\n# A = Araba() # Bu hata verir, çünkü marka ve model eksik\na = Araba('BMW', 'X5')\nprint(a.marka, a.model)"
+    },
+    {
+      "id": 4,
+      "title": "__str__ Metodu (Bonus)",
+      "explanation": "Nesneyi doğrudan print() ile yazdırdığımızda ne döneceğini belirler.",
+      "default_code": "class Insan:\n  def __init__(self, isim):\n    self.isim = isim\n  \n  def __str__(self):\n    return f'İnsan nesnesi: {self.isim}'\n\np = Insan('Ayşe')\nprint(p) # __str__ olmasa anlamsız bir hafıza adresi yazardı"
+    },
+    {
+      "id": 5,
+      "title": "Varsayılan Değerli __init__",
+      "explanation": "Eğer nesne oluşturulurken değer girilmezse, varsayılan bir değer kullanmasını sağlayabiliriz.",
+      "default_code": "class Kedi:\n  def __init__(self, isim='Bilinmiyor'):\n    self.isim = isim\n\nk1 = Kedi('Tekir')\nk2 = Kedi()\nprint(k1.isim)\nprint(k2.isim)"
+    }
+  ]
+}

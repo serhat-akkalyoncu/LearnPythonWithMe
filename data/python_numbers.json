@@ -1,0 +1,37 @@
+{
+  "topic": "Python Numbers",
+  "order": 8,
+  "description": "Python'da üç sayısal veri tipi vardır: int, float ve complex.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Int (Tam Sayı)",
+      "explanation": "Int, pozitif veya negatif, ondalık kısmı olmayan tam sayılardır.",
+      "default_code": "x = 1\ny = 35656222554887711\nz = -3255522\nprint(type(x), type(y), type(z))"
+    },
+    {
+      "id": 2,
+      "title": "Float (Ondalıklı Sayı)",
+      "explanation": "Float, bir veya daha fazla ondalık basamağı olan sayılardır.",
+      "default_code": "x = 1.10\ny = 1.0\nz = -35.59\nprint(type(x), type(y), type(z))"
+    },
+    {
+      "id": 3,
+      "title": "Bilimsel Float Sayılar",
+      "explanation": "Float sayılar, 10'un kuvvetini belirtmek için 'e' harfi ile de yazılabilir.",
+      "default_code": "x = 35e3\ny = 12E4\nz = -87.7e100\nprint(x, y, z)\nprint(type(x))"
+    },
+    {
+      "id": 4,
+      "title": "Complex (Karmaşık Sayı)",
+      "explanation": "Karmaşık sayılar, sanal kısmı belirtmek için 'j' harfi ile yazılır.",
+      "default_code": "x = 3+5j\ny = 5j\nz = -5j\nprint(type(x), type(y), type(z))"
+    },
+    {
+      "id": 5,
+      "title": "Rastgele Sayı Üretme",
+      "explanation": "Rastgele sayı üretmek için 'random' modülü vardır.",
+      "default_code": "import random\nprint(random.randrange(1, 10))"
+    }
+  ]
+}

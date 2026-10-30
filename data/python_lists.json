@@ -1,0 +1,37 @@
+{
+  "topic": "Python Lists",
+  "order": 13,
+  "description": "Listeler, tek bir değişkende birden fazla öğeyi depolamak için kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Liste Oluşturma",
+      "explanation": "Köşeli parantez kullanılır.",
+      "default_code": "liste = ['elma', 'muz', 'kiraz']\nprint(liste)"
+    },
+    {
+      "id": 2,
+      "title": "Öğeye Erişme",
+      "explanation": "İndeks numarası ile erişilir.",
+      "default_code": "liste = ['elma', 'muz', 'kiraz']\nprint(liste[1])"
+    },
+    {
+      "id": 3,
+      "title": "Öğe Değiştirme",
+      "explanation": "Belirli bir indeksteki değeri değiştirebilirsiniz.",
+      "default_code": "liste = ['elma', 'muz', 'kiraz']\nliste[1] = 'kivi'\nprint(liste)"
+    },
+    {
+      "id": 4,
+      "title": "Öğe Ekleme",
+      "explanation": "append() metodu ile sona öğe eklenir.",
+      "default_code": "liste = ['elma']\nliste.append('portakal')\nprint(liste)"
+    },
+    {
+      "id": 5,
+      "title": "Öğe Silme",
+      "explanation": "remove() metodu ile belirtilen öğe silinir.",
+      "default_code": "liste = ['elma', 'muz']\nliste.remove('elma')\nprint(liste)"
+    }
+  ]
+}

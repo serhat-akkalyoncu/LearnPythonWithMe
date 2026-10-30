@@ -1,0 +1,37 @@
+{
+  "topic": "Python Variables",
+  "order": 6,
+  "description": "Değişkenler, veri değerlerini depolamak için kullanılan kaplardır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Değişken Oluşturma",
+      "explanation": "Python'un değişken bildirmek için bir komutu yoktur.",
+      "default_code": "x = 10\ny = 'Ayşe'\nprint(x)\nprint(y)"
+    },
+    {
+      "id": 2,
+      "title": "Değişken İsimlendirme Kuralları",
+      "explanation": "Değişken isimleri harf veya alt çizgi ile başlamalıdır.",
+      "default_code": "benim_degiskenim = 'Doğru'\n_gizli_degisken = 100\nprint(benim_degiskenim, _gizli_degisken)"
+    },
+    {
+      "id": 3,
+      "title": "Büyük/Küçük Harf Duyarlılığı",
+      "explanation": "Değişken adları büyük/küçük harfe duyarlıdır.",
+      "default_code": "a = 4\nA = 'Can'\nprint('Küçük a:', a)\nprint('Büyük A:', A)"
+    },
+    {
+      "id": 4,
+      "title": "Tip Dönüşümü (Casting)",
+      "explanation": "Bir değişkenin veri tipini belirtmek istiyorsanız casting işlemi yapabilirsiniz.",
+      "default_code": "x = str(3)    # x '3' olur\ny = int(3)    # y 3 olur\nz = float(3)  # z 3.0 olur\nprint(x, y, z)"
+    },
+    {
+      "id": 5,
+      "title": "Değişken Tipini Öğrenme",
+      "explanation": "Bir değişkenin hangi veri tipinde olduğunu öğrenmek için type() fonksiyonu kullanılır.",
+      "default_code": "x = 5\ny = 'Veli'\nprint(type(x))\nprint(type(y))"
+    }
+  ]
+}

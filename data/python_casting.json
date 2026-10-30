@@ -1,0 +1,37 @@
+{
+  "topic": "Python Casting",
+  "order": 9,
+  "description": "Bir değişkenin tipini manuel olarak belirtmek veya dönüştürmek döküm (casting) ile yapılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Tam Sayıya Çevirme (int)",
+      "explanation": "int() fonksiyonu, bir sayıyı veya sayısal metni tam sayıya çevirir.",
+      "default_code": "x = int(1)\ny = int(2.8)\nz = int('3')\nprint(x, y, z)"
+    },
+    {
+      "id": 2,
+      "title": "Ondalıklı Sayıya Çevirme (float)",
+      "explanation": "float() fonksiyonu, bir tam sayıyı veya metni ondalıklı sayıya çevirir.",
+      "default_code": "x = float(1)\ny = float(2.8)\nz = float('3')\nprint(x, y, z)"
+    },
+    {
+      "id": 3,
+      "title": "Metne Çevirme (str)",
+      "explanation": "str() fonksiyonu, herhangi bir veri tipini string formatına çevirir.",
+      "default_code": "x = str('s1')\ny = str(2)\nz = str(3.0)\nprint(x, y, z)"
+    },
+    {
+      "id": 4,
+      "title": "Metinleri Toplama vs Sayıları Toplama",
+      "explanation": "Sayıları string'e çevirdiğinizde toplama işlemi metinsel birleştirme yapar.",
+      "default_code": "sayi1 = str(5)\nsayi2 = str(10)\nprint('Metin birleşimi:', sayi1 + sayi2)\nprint('Matematik:', int(sayi1) + int(sayi2))"
+    },
+    {
+      "id": 5,
+      "title": "Hatalı Dönüşüm",
+      "explanation": "İçinde harf bulunan metni sayıya çevirmek ValueError hatasına yol açar.",
+      "default_code": "metin = '10a'\n# sayi = int(metin) # Bu hata verir"
+    }
+  ]
+}

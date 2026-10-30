@@ -1,0 +1,37 @@
+{
+  "topic": "Python Write/Create Files",
+  "order": 49,
+  "description": "Var olan bir dosyaya veri eklemek ('a') veya içindekileri silip yeniden yazmak ('w') mümkündür. Yeni dosya oluşturmak için 'x' kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Dosyaya Ekleme Yapmak ('a')",
+      "explanation": "'a' (append) modu ile açarsanız, yazdığınız veri eski içeriğin SILINMEDEN en sonuna eklenir.",
+      "default_code": "# f = open('notlar.txt', 'a')\n# f.write('\\nBu yeni bir satırdır.')\n# f.close()\nprint('Dosya sonuna ekleme yapıldı (Simülasyon).')"
+    },
+    {
+      "id": 2,
+      "title": "Dosyanın İçeriğini Ezmek ('w')",
+      "explanation": "'w' (write) modu ile açarsanız, dosyanın önceki tüm içeriği SİLİNİR ve sadece sizin yeni yazdıklarınız kalır.",
+      "default_code": "# f = open('notlar.txt', 'w')\n# f.write('Tüm eskiler silindi, sadece bu yazı kaldı!')\n# f.close()\nprint('Dosya içeriği ezilerek yeni veri yazıldı (Simülasyon).')"
+    },
+    {
+      "id": 3,
+      "title": "Yeni Dosya Oluşturmak ('x')",
+      "explanation": "'x' (create) boş bir dosya yaratır. Eğer aynı isimde dosya zaten varsa hata verir.",
+      "default_code": "try:\n# f = open('yeni_dosya.txt', 'x')\n  print('yeni_dosya.txt başarıyla oluşturuldu (Simülasyon).')\nexcept FileExistsError:\n  print('Hata: Dosya zaten var!')"
+    },
+    {
+      "id": 4,
+      "title": "w ve a Arasındaki Fark",
+      "explanation": "w yıkıcıdır, a ise birleştiricidir.",
+      "default_code": "print('1. Gün: w ile yazdım (Ahmet)\\n2. Gün: a ile yazdım (Mehmet)\\nSonuç: AhmetMehmet')"
+    },
+    {
+      "id": 5,
+      "title": "Kısa Yol ile Yazmak (with)",
+      "explanation": "Yazma işleminde de 'with' yapısını kullanarak dosyanın güvenle kapanmasını sağlayabiliriz.",
+      "default_code": "# with open('isimler.txt', 'w') as f:\n#   f.write('Ali, Ayşe, Veli')\nprint('with yapısı ile güvenle yazıldı (Simülasyon).')"
+    }
+  ]
+}

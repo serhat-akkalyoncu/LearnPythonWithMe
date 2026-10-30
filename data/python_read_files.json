@@ -1,0 +1,37 @@
+{
+  "topic": "Python Read Files",
+  "order": 48,
+  "description": "Açılmış bir dosyanın içeriğini okumak için read(), readline() gibi metotlar kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Dosyanın Tamamını Okumak",
+      "explanation": "Sanallık: Sistemin çökmesini engellemek için kod ortamınızda dosya okumayı simüle edeceğiz.",
+      "default_code": "# f = open('ornek.txt', 'r')\n# print(f.read())\nprint('read() metodu dosyanın tüm içeriğini metin olarak verir.')"
+    },
+    {
+      "id": 2,
+      "title": "Belirli Sayıda Karakter Okumak",
+      "explanation": "read(5) derseniz dosyanın sadece ilk 5 karakterini (harfini) okur.",
+      "default_code": "# f = open('ornek.txt', 'r')\n# print(f.read(5))\nprint('Sadece ilk 5 karakter okundu (Simülasyon).')"
+    },
+    {
+      "id": 3,
+      "title": "Satır Satır Okumak",
+      "explanation": "readline() metodu, dosyayı satır satır okumaya yarar. Bir kez çağırırsanız ilk satırı, tekrar çağırırsanız ikinci satırı okur.",
+      "default_code": "# f = open('ornek.txt', 'r')\n# print(f.readline())\nprint('Sadece 1. satır okundu (Simülasyon).')"
+    },
+    {
+      "id": 4,
+      "title": "Döngü ile Tüm Satırları Okumak",
+      "explanation": "Dosya nesnesini for döngüsüne sokarak tüm satırları sırayla okuyabiliriz.",
+      "default_code": "# f = open('ornek.txt', 'r')\n# for satir in f:\n#   print(satir)\nprint('Döngü ile satırlar okundu (Simülasyon).')"
+    },
+    {
+      "id": 5,
+      "title": "Güvenli Okuma (with open)",
+      "explanation": "Dosyaları okurken 'with open' yapısını kullanırsanız, işlem bitince dosya .close() yazmanıza gerek kalmadan otomatik kapanır.",
+      "default_code": "# with open('ornek.txt', 'r') as f:\n#   icerik = f.read()\nprint('with open() en güvenli dosya işlemidir.')"
+    }
+  ]
+}

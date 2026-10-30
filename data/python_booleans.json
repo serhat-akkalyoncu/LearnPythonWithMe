@@ -1,0 +1,37 @@
+{
+  "topic": "Python Booleans",
+  "order": 11,
+  "description": "Boolean'lar iki değerden birini temsil eder: True (Doğru) veya False (Yanlış).",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Karşılaştırma",
+      "explanation": "İki değeri karşılaştırdığınızda Python Boolean yanıt döndürür.",
+      "default_code": "print(10 > 9)\nprint(10 == 9)\nprint(10 < 9)"
+    },
+    {
+      "id": 2,
+      "title": "If İfadesinde Boolean",
+      "explanation": "If koşullarının sonucu her zaman bir Boolean'dır.",
+      "default_code": "a = 200\nb = 33\nif b > a:\n    print('b büyüktür a')\nelse:\n    print('b, a\\'dan büyük değildir')"
+    },
+    {
+      "id": 3,
+      "title": "Değerleri Değerlendirme",
+      "explanation": "bool() fonksiyonu herhangi bir değeri değerlendirmenizi sağlar.",
+      "default_code": "print(bool('Merhaba'))\nprint(bool(15))"
+    },
+    {
+      "id": 4,
+      "title": "False Döndüren Değerler",
+      "explanation": "Boş listeler, 0 sayısı veya boş stringler False döner.",
+      "default_code": "print(bool(False))\nprint(bool(None))\nprint(bool(0))\nprint(bool(''))"
+    },
+    {
+      "id": 5,
+      "title": "Fonksiyonların Boolean Döndürmesi",
+      "explanation": "Fonksiyonlar Boolean bir değer döndürecek şekilde yazılabilir.",
+      "default_code": "def fonksiyonum():\n    return True\n\nif fonksiyonum():\n    print('EVET!')\nelse:\n    print('HAYIR!')"
+    }
+  ]
+}

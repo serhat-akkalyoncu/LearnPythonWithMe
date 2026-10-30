@@ -1,0 +1,37 @@
+{
+  "topic": "Python Data Types",
+  "order": 7,
+  "description": "Python'da varsayılan olarak birçok temel veri tipi (str, int, float, list, dict, bool vb.) bulunur.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Temel Veri Tipleri",
+      "explanation": "Metin, tam sayı ve ondalıklı sayı tiplerinin kullanımı.",
+      "default_code": "metin = 'Merhaba'\ntam_sayi = 20\nondalikli = 20.5\nprint(type(metin), type(tam_sayi), type(ondalikli))"
+    },
+    {
+      "id": 2,
+      "title": "Liste (List) Tipi",
+      "explanation": "Listeler sıralı ve değiştirilebilir veri koleksiyonlarıdır.",
+      "default_code": "meyveler = ['elma', 'muz', 'kiraz']\nprint(meyveler)\nprint(type(meyveler))"
+    },
+    {
+      "id": 3,
+      "title": "Demet (Tuple) Tipi",
+      "explanation": "Demetler sıralı ancak değiştirilemez koleksiyonlardır.",
+      "default_code": "arabalar = ('ford', 'bmw', 'audi')\nprint(arabalar)\nprint(type(arabalar))"
+    },
+    {
+      "id": 4,
+      "title": "Sözlük (Dictionary) Tipi",
+      "explanation": "Sözlükler anahtar-değer (key-value) çiftleri halinde veri tutar.",
+      "default_code": "ogrenci = {'isim': 'Ahmet', 'yas': 22}\nprint(ogrenci['isim'])\nprint(type(ogrenci))"
+    },
+    {
+      "id": 5,
+      "title": "Mantıksal (Boolean) Tip",
+      "explanation": "Sadece True veya False değeri alabilen veri tipidir.",
+      "default_code": "dogru_mu = True\nyanlis_mi = False\nprint(dogru_mu, yanlis_mi)\nprint(type(dogru_mu))"
+    }
+  ]
+}

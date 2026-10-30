@@ -1,0 +1,37 @@
+{
+  "topic": "Python Syntax",
+  "order": 3,
+  "description": "Python'ın en önemli yazım kuralı (syntax) girintilerdir (indentation).",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Girinti (Indentation) Kullanımı",
+      "explanation": "Eğer şart sağlanıyorsa içerideki bloğa girmek için bir 'Tab' veya 4 boşluk bırakılır.",
+      "default_code": "if 5 > 2:\n    print('Beş, ikiden büyüktür!')"
+    },
+    {
+      "id": 2,
+      "title": "Girinti Hatası (Kasıtlı Hata)",
+      "explanation": "Aşağıdaki kodu çalıştırdığınızda 'IndentationError' hatası alırsınız.",
+      "default_code": "if 5 > 2:\nprint('Bu kod hata verecek, boşluk bırakılmalıydı.')"
+    },
+    {
+      "id": 3,
+      "title": "Aynı Satırda Birden Fazla Değişken",
+      "explanation": "Tek bir satırda birden fazla değişkene değer atayabilirsiniz.",
+      "default_code": "x, y, z = 'Elma', 'Muz', 'Çilek'\nprint(x)\nprint(y)\nprint(z)"
+    },
+    {
+      "id": 4,
+      "title": "Tek Bir Değeri Birden Fazla Değişkene Atama",
+      "explanation": "Aynı değeri aynı anda birden fazla değişkene verebilirsiniz.",
+      "default_code": "a = b = c = 'Portakal'\nprint(a, b, c)"
+    },
+    {
+      "id": 5,
+      "title": "Satır Kırma",
+      "explanation": "Çok uzun bir kod satırını ters eğik çizgi (\\) ile alt satırdan devam ettirebilirsiniz.",
+      "default_code": "toplam = 1 + 2 + 3 + \\\n         4 + 5 + 6\nprint('Toplam:', toplam)"
+    }
+  ]
+}

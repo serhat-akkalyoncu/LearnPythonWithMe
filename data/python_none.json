@@ -1,0 +1,37 @@
+{
+  "topic": "Python None",
+  "order": 33,
+  "description": "None anahtar kelimesi, boş veya eksik bir değeri tanımlamak için kullanılır. Diğer dillerdeki Null kavramına karşılık gelir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "None Değeri Atama",
+      "explanation": "Bir değişkene None atanabilir. Veri tipi NoneType olur.",
+      "default_code": "x = None\nprint(x)\nprint(type(x))"
+    },
+    {
+      "id": 2,
+      "title": "None Kontrolü (is None)",
+      "explanation": "Bir değişkenin boş (None) olup olmadığını kontrol etmek için 'is' kullanılır.",
+      "default_code": "x = None\nif x is None:\n  print('Değer atanmamış (None)')"
+    },
+    {
+      "id": 3,
+      "title": "Fonksiyonlarda Default Return",
+      "explanation": "Bir fonksiyon hiçbir şey döndürmezse (return yoksa), aslında None döndürür.",
+      "default_code": "def bos_fonksiyon():\n  pass\n\nsonuc = bos_fonksiyon()\nprint(sonuc)"
+    },
+    {
+      "id": 4,
+      "title": "None vs Boş String / 0",
+      "explanation": "None, boş dize ('') veya 0 ile aynı şey değildir.",
+      "default_code": "print(None == 0)\nprint(None == '')\nprint(None == False)"
+    },
+    {
+      "id": 5,
+      "title": "Başlangıç Durumu Olarak None",
+      "explanation": "Değişkenlere henüz ne değer atanacağı bilinmiyorsa başlangıçta None atanır.",
+      "default_code": "en_yuksek = None\npuan = 85\nif en_yuksek is None or puan > en_yuksek:\n  en_yuksek = puan\nprint(en_yuksek)"
+    }
+  ]
+}

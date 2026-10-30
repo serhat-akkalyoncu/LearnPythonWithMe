@@ -1,0 +1,37 @@
+{
+  "topic": "Python OOP",
+  "order": 36,
+  "description": "OOP (Nesne Yönelimli Programlama), kodlarımızı gerçek dünyadaki nesnelere benzeterek yazmamızı sağlayan bir programlama yaklaşımıdır. Spagetti kod yazmaktan kurtarır, kodu düzenli tutar.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "OOP Nedir?",
+      "explanation": "OOP'de her şey bir 'Nesne'dir. Örneğin bir 'Araba' nesnesinin rengi (özelliği) ve gitme (eylemi) kapasitesi vardır.",
+      "default_code": "print('OOP temel kavramları: Sınıf (Class) ve Nesne (Object) üzerine kuruludur.')"
+    },
+    {
+      "id": 2,
+      "title": "Sınıf vs Nesne (Teori)",
+      "explanation": "Sınıf (Class) bir fabrika kalıbıdır. Nesne (Object) ise o kalıptan üretilen ürünlerdir.",
+      "default_code": "# Sınıf: Kek Kalıbı\n# Nesneler: Çikolatalı Kek, Çilekli Kek\nprint('Bir sınıftan istediğiniz kadar nesne üretebilirsiniz.')"
+    },
+    {
+      "id": 3,
+      "title": "Neden OOP Kullanırız?",
+      "explanation": "Kod tekrarını önler, büyük projelerin yönetimini kolaylaştırır ve hataları bulmayı hızlandırır.",
+      "default_code": "print('1. DRY (Don\\'t Repeat Yourself - Kendini Tekrar Etme)\\n2. Kolay Bakım\\n3. Güvenlik')"
+    },
+    {
+      "id": 4,
+      "title": "Prosedürel vs OOP",
+      "explanation": "Prosedürel programlama alt alta yazılan fonksiyonlardan oluşurken, OOP verileri ve fonksiyonları tek bir kutuda (nesnede) toplar.",
+      "default_code": "print('OOP, karmaşık sistemleri daha anlaşılır parçalara böler.')"
+    },
+    {
+      "id": 5,
+      "title": "OOP'nin 4 Temel Direği",
+      "explanation": "Kapsülleme (Encapsulation), Kalıtım (Inheritance), Çok Biçimlilik (Polymorphism) ve Soyutlama (Abstraction).",
+      "default_code": "print('Bu 4 temel kuralı ilerleyen derslerde detaylıca göreceğiz.')"
+    }
+  ]
+}

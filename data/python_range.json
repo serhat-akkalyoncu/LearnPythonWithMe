@@ -1,0 +1,37 @@
+{
+  "topic": "Python Range",
+  "order": 22,
+  "description": "range() fonksiyonu, varsayılan olarak 0'dan başlayan, 1'er artan ve belirtilen bir sayının öncesinde duran bir sayı dizisi döndürür.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Temel Range",
+      "explanation": "0'dan başlayıp 6'ya kadar (6 hariç) yazdırır.",
+      "default_code": "for x in range(6):\n  print(x)"
+    },
+    {
+      "id": 2,
+      "title": "Başlangıç Parametresi",
+      "explanation": "Nereden başlayacağını belirtebilirsiniz (ör: 2'den 6'ya).",
+      "default_code": "for x in range(2, 6):\n  print(x)"
+    },
+    {
+      "id": 3,
+      "title": "Adım (Step) Parametresi",
+      "explanation": "Kaçar kaçar artacağını belirtebilirsiniz (ör: 3'er).",
+      "default_code": "for x in range(2, 30, 3):\n  print(x)"
+    },
+    {
+      "id": 4,
+      "title": "Else ile Kullanımı",
+      "explanation": "Döngü başarıyla bittiğinde else bloğu çalışır.",
+      "default_code": "for x in range(3):\n  print(x)\nelse:\n  print('Döngü bitti!')"
+    },
+    {
+      "id": 5,
+      "title": "Range'i Listeye Çevirme",
+      "explanation": "list() fonksiyonu ile üretilen diziyi listeye çevirebilirsiniz.",
+      "default_code": "sayilar = list(range(5))\nprint(sayilar)"
+    }
+  ]
+}

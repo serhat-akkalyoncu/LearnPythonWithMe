@@ -1,0 +1,37 @@
+{
+  "topic": "Python Inheritance",
+  "order": 43,
+  "description": "Kalıtım (Inheritance), bir sınıfın başka bir sınıfın tüm yöntemlerini ve özelliklerini devralmasına (miras almasına) olanak tanır. Kod tekrarını önler.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Ebeveyn (Parent) Sınıf Oluşturma",
+      "explanation": "Önce temel özellikleri barındıran bir ana sınıf (Baba/Anne) oluşturalım.",
+      "default_code": "class Hayvan:\n  def __init__(self, isim):\n    self.isim = isim\n  def yemek_ye(self):\n    print(self.isim + ' yemek yiyor.')\n\nh = Hayvan('Bir hayvan')\nh.yemek_ye()"
+    },
+    {
+      "id": 2,
+      "title": "Çocuk (Child) Sınıf Oluşturma",
+      "explanation": "Başka bir sınıftan miras almak için sınıfı tanımlarken parantez içine ebeveyn sınıfın adını yazarız.",
+      "default_code": "class Hayvan:\n  def nefes_al(self):\n    print('Nefes alınıyor...')\n\n# Kopek, Hayvan sınıfından miras alıyor\nclass Kopek(Hayvan):\n  pass # Şimdilik içi boş\n\nkarabas = Kopek()\nkarabas.nefes_al() # Ebeveynin metodunu kullanabildi"
+    },
+    {
+      "id": 3,
+      "title": "Çocuk Sınıfa __init__ Ekleme",
+      "explanation": "Çocuk sınıfa __init__ eklerseniz, ebeveynin __init__ metodunu ezer (geçersiz kılar).",
+      "default_code": "class Baba:\n  def __init__(self):\n    print('Baba sınıfı başlatıldı')\n\nclass Cocuk(Baba):\n  def __init__(self):\n    print('Çocuk sınıfı başlatıldı (Babanınki ezildi)')\n\nc = Cocuk()"
+    },
+    {
+      "id": 4,
+      "title": "super() Fonksiyonu",
+      "explanation": "Çocuk sınıfın içinden ebeveyn sınıfın __init__ metodunu çağırmak için super() kullanırız.",
+      "default_code": "class Hayvan:\n  def __init__(self, tur):\n    self.tur = tur\n\nclass Kedi(Hayvan):\n  def __init__(self, isim):\n    super().__init__('Kedi Türü') # Üst sınıfı çalıştır\n    self.isim = isim\n\nk = Kedi('Pamuk')\nprint(k.isim, 'bir', k.tur)"
+    },
+    {
+      "id": 5,
+      "title": "Ebeveyn Metodunu Ezme (Overriding)",
+      "explanation": "Ebeveynde olan bir metodu çocuk sınıfta aynı isimle tekrar yazarsanız, çocuktaki geçerli olur.",
+      "default_code": "class Kus:\n  def ses_cikar(self):\n    print('Cik cik')\n\nclass Karga(Kus):\n  def ses_cikar(self):\n    print('Gaaak gaaak') # Üst sınıfı ezdik\n\nk = Karga()\nk.ses_cikar()"
+    }
+  ]
+}

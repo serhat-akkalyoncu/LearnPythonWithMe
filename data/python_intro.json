@@ -1,0 +1,37 @@
+{
+  "topic": "Python Intro",
+  "order": 1,
+  "description": "Python, veri bilimi, web geliştirme ve otomasyon gibi birçok alanda kullanılan popüler ve okunabilirliği yüksek bir programlama dilidir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Ekrana Yazdırma",
+      "explanation": "Python'da ekrana bir şeyler yazdırmak için print() fonksiyonu kullanılır.",
+      "default_code": "print('Merhaba, Python Dünyası!')"
+    },
+    {
+      "id": 2,
+      "title": "Basit Matematik",
+      "explanation": "Python'u bir hesap makinesi gibi kullanabilirsiniz.",
+      "default_code": "print(5 + 3)"
+    },
+    {
+      "id": 3,
+      "title": "Değişken Tanımlama",
+      "explanation": "Değişkenler verileri saklamak için kullanılır. Tür belirtmeye gerek yoktur.",
+      "default_code": "isim = 'Ali'\nprint('Merhaba', isim)"
+    },
+    {
+      "id": 4,
+      "title": "Çoklu Satır Yazdırma",
+      "explanation": "Üç tırnak kullanarak birden fazla satıra yayılan metinler oluşturabilirsiniz.",
+      "default_code": "mesaj = '''Bu birinci satır.\nBu da ikinci satır.'''\nprint(mesaj)"
+    },
+    {
+      "id": 5,
+      "title": "Tip Öğrenme",
+      "explanation": "type() fonksiyonu ile bir verinin tipini öğrenebilirsiniz.",
+      "default_code": "sayi = 10\nprint(type(sayi))"
+    }
+  ]
+}

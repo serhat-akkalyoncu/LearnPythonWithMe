@@ -1,0 +1,37 @@
+{
+  "topic": "Python For Loops",
+  "order": 20,
+  "description": "For döngüsü, bir dizi (liste, tuple, sözlük, set veya dize) üzerinde yineleme yapmak için kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Liste Üzerinde For Döngüsü",
+      "explanation": "Listedeki her öğeyi sırayla yazdırır.",
+      "default_code": "meyveler = ['elma', 'muz', 'kiraz']\nfor x in meyveler:\n  print(x)"
+    },
+    {
+      "id": 2,
+      "title": "String Üzerinde For",
+      "explanation": "Metindeki harfleri tek tek gezer.",
+      "default_code": "for x in 'muz':\n  print(x)"
+    },
+    {
+      "id": 3,
+      "title": "Break Kullanımı",
+      "explanation": "Döngüyü tamamen durdurur.",
+      "default_code": "meyveler = ['elma', 'muz', 'kiraz']\nfor x in meyveler:\n  if x == 'muz':\n    break\n  print(x)"
+    },
+    {
+      "id": 4,
+      "title": "Continue Kullanımı",
+      "explanation": "O adımı atlayıp döngüye devam eder.",
+      "default_code": "meyveler = ['elma', 'muz', 'kiraz']\nfor x in meyveler:\n  if x == 'muz':\n    continue\n  print(x)"
+    },
+    {
+      "id": 5,
+      "title": "İç İçe Döngüler (Nested)",
+      "explanation": "Döngü içinde döngü çalıştırabilirsiniz.",
+      "default_code": "renkler = ['kırmızı', 'büyük']\nmeyveler = ['elma', 'çilek']\nfor x in renkler:\n  for y in meyveler:\n    print(x, y)"
+    }
+  ]
+}

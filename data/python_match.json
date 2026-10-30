@@ -1,0 +1,37 @@
+{
+  "topic": "Python Match",
+  "order": 18,
+  "description": "Match-Case yapısı (Python 3.10+), diğer dillerdeki switch-case yapısına benzer şekilde çalışır ve yapısal desen eşleştirmesi sağlar.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Temel Match-Case",
+      "explanation": "Bir değişkenin değerini farklı durumlara (case) göre kontrol eder.",
+      "default_code": "durum = 200\nmatch durum:\n  case 200:\n    print('Başarılı')\n  case 404:\n    print('Bulunamadı')\n  case _: \n    print('Bilinmeyen Durum')"
+    },
+    {
+      "id": 2,
+      "title": "Birden Fazla Değeri Eşleştirme",
+      "explanation": "Veya (|) operatörü ile birden fazla değeri aynı case altında birleştirebilirsiniz.",
+      "default_code": "komut = 'quit'\nmatch komut:\n  case 'quit' | 'exit':\n    print('Çıkış yapılıyor')\n  case 'start':\n    print('Başlatılıyor')"
+    },
+    {
+      "id": 3,
+      "title": "Tuple Eşleştirme",
+      "explanation": "Veri yapılarını (örneğin koordinatları) doğrudan eşleştirebilirsiniz.",
+      "default_code": "nokta = (0, 0)\nmatch nokta:\n  case (0, 0):\n    print('Orijin noktasındasınız')\n  case (x, 0):\n    print(f'X eksenindesiniz: {x}')"
+    },
+    {
+      "id": 4,
+      "title": "Koşullu Eşleştirme (Guard)",
+      "explanation": "Case bloğuna ek bir 'if' koşulu eklenebilir.",
+      "default_code": "yas = 15\nmatch yas:\n  case x if x >= 18:\n    print('Yetişkinsiniz')\n  case x if x < 18:\n    print('Reşit değilsiniz')"
+    },
+    {
+      "id": 5,
+      "title": "Sözlük Eşleştirme",
+      "explanation": "Sözlüklerin yapısını kontrol edebilirsiniz.",
+      "default_code": "kullanici = {'isim': 'Ali', 'rol': 'admin'}\nmatch kullanici:\n  case {'rol': 'admin'}:\n    print('Admin yetkisi var.')\n  case {'rol': 'kullanici'}:\n    print('Normal kullanıcı.')"
+    }
+  ]
+}

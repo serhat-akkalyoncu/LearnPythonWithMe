@@ -1,0 +1,37 @@
+{
+  "topic": "Python Get Started",
+  "order": 2,
+  "description": "Python'a başlarken temel komutları ve sistemle nasıl etkileşime geçeceğinizi öğrenin.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "İlk Python Kodumuz",
+      "explanation": "Python'da ekrana 'Hello, World!' yazdırmak geleneksel bir başlangıçtır.",
+      "default_code": "print('Hello, World!')"
+    },
+    {
+      "id": 2,
+      "title": "Python Versiyonunu Öğrenme",
+      "explanation": "Hangi Python sürümünü kullandığınızı sys modülü ile öğrenebilirsiniz.",
+      "default_code": "import sys\nprint(sys.version)"
+    },
+    {
+      "id": 3,
+      "title": "Matematiksel İşlemlere Giriş",
+      "explanation": "Basit matematiksel işlemleri doğrudan yazıp sonucunu görebilirsiniz.",
+      "default_code": "hesap = (10 * 5) + 20\nprint('Sonuç:', hesap)"
+    },
+    {
+      "id": 4,
+      "title": "Değişkenlere Değer Atama",
+      "explanation": "Python'da değişken oluşturmak için ona bir değer atamanız yeterlidir.",
+      "default_code": "x = 5\ny = 'Elma'\nprint(x)\nprint(y)"
+    },
+    {
+      "id": 5,
+      "title": "Kod İçinde Yorum Satırları",
+      "explanation": "Kodun ne işe yaradığını anlatmak için # işareti ile yorumlar ekleyebilirsiniz. Yorumlar çalıştırılmaz.",
+      "default_code": "# Bu bir yorum satırıdır\nprint('Yorum satırları çıktıya yansımaz.')"
+    }
+  ]
+}

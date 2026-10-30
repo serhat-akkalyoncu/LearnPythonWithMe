@@ -1,0 +1,37 @@
+{
+  "topic": "Python VirtualEnv",
+  "order": 35,
+  "description": "Virtual Environment (Sanal Ortam), Python projeleri için izole edilmiş ortamlar yaratır. Projelerin bağımlılıklarının çakışmasını önler.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Sanal Ortam Neden Gereklidir?",
+      "explanation": "Proje A'nın Django 2.0, Proje B'nin Django 3.0'a ihtiyacı varsa çakışmayı önler.",
+      "default_code": "print('Sanal ortamlar projeleri birbirinden izole eder.')"
+    },
+    {
+      "id": 2,
+      "title": "Sanal Ortam Oluşturma",
+      "explanation": "Terminal üzerinden venv modülü çağrılarak oluşturulur.",
+      "default_code": "# Terminal komutu:\n# python -m venv benim_ortamim\nprint('Terminalde çalıştırılır.')"
+    },
+    {
+      "id": 3,
+      "title": "Sanal Ortamı Aktifleştirme (Windows)",
+      "explanation": "Windows üzerinde script klasöründeki activate dosyası tetiklenir.",
+      "default_code": "# Terminal komutu:\n# benim_ortamim\\\\Scripts\\\\activate\nprint('Aktifleştikten sonra komut satırında (benim_ortamim) görünür.')"
+    },
+    {
+      "id": 4,
+      "title": "Sanal Ortamı Aktifleştirme (Mac/Linux)",
+      "explanation": "Mac/Linux için source komutu ile aktifleştirme yapılır.",
+      "default_code": "# Terminal komutu:\n# source benim_ortamim/bin/activate\nprint('Terminal ortamı değişir.')"
+    },
+    {
+      "id": 5,
+      "title": "Ortamdan Çıkış Yapma (Deactivate)",
+      "explanation": "Sanal ortamdan çıkmak için terminale sadece 'deactivate' yazılır.",
+      "default_code": "# Terminal komutu:\n# deactivate\nprint('Ortamdan çıkılarak sistemin ana Python ortamına dönülür.')"
+    }
+  ]
+}

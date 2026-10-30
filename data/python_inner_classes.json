@@ -1,0 +1,37 @@
+{
+  "topic": "Python Inner Classes",
+  "order": 46,
+  "description": "İç Sınıflar (Inner Classes), bir sınıfın içinde başka bir sınıf tanımlamaktır. Nesneleri mantıksal olarak gruplamak için kullanılır (Örn: Öğrenci ve içindeki DoğumTarihi).",
+  "examples": [
+    {
+      "id": 1,
+      "title": "İç Sınıf Oluşturma",
+      "explanation": "Normal bir sınıf yazar gibi başka bir sınıfın içine class açarız.",
+      "default_code": "class Insan:\n  class Beyin:\n    def dusun(self):\n      print('Düşünüyorum, öyleyse varım.')\n\nprint('İç sınıf oluşturuldu.')"
+    },
+    {
+      "id": 2,
+      "title": "İç Sınıf Nesnesi Yaratma",
+      "explanation": "Önce Dış Sınıfın (Outer), sonra İç Sınıfın (Inner) nesnesini üretiriz.",
+      "default_code": "class DisSinif:\n  class IcSinif:\n    def merhaba(self):\n      print('İç sınıftan merhaba!')\n\n# DisSinif üzerinden IcSinif'a erişiyoruz\nnesne = DisSinif.IcSinif()\nnesne.merhaba()"
+    },
+    {
+      "id": 3,
+      "title": "__init__ İçinde İç Sınıf Üretmek",
+      "explanation": "Dış sınıf yaratıldığı anda, iç sınıf da otomatik yaratılsın istiyorsak __init__ içinde tanımlarız.",
+      "default_code": "class Ogrenci:\n  def __init__(self, isim):\n    self.isim = isim\n    self.bilgisayar = self.Bilgisayar()\n    \n  class Bilgisayar:\n    marka = 'HP'\n\no = Ogrenci('Ayşe')\nprint(o.isim, 'kullanıcısının bilgisayarı:', o.bilgisayar.marka)"
+    },
+    {
+      "id": 4,
+      "title": "Birden Fazla İç Sınıf",
+      "explanation": "Bir dış sınıfın içinde birden fazla bağımsız iç sınıf olabilir.",
+      "default_code": "class Ev:\n  class Mutfak:\n    pencere = 1\n  class YatakOdasi:\n    pencere = 2\n\ne = Ev()\nmutfak = e.Mutfak()\nprint('Mutfaktaki pencere sayısı:', mutfak.pencere)"
+    },
+    {
+      "id": 5,
+      "title": "Neden İç Sınıf Kullanırız?",
+      "explanation": "Bilgisayar nesnesi Öğrenci olmadan anlamsızsa, dışarıda başıboş durması yerine Öğrenci'nin içinde gizlenir.",
+      "default_code": "print('Sıkı sıkıya bağlı nesneleri gruplamak için kullanılır. (Örn: Araba ve Motor)')"
+    }
+  ]
+}

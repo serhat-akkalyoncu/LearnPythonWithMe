@@ -1,0 +1,37 @@
+{
+  "topic": "Python Math",
+  "order": 27,
+  "description": "Python, sayılar üzerinde matematiksel işlemler yapmanıza olanak tanıyan yerleşik matematiksel fonksiyonlara ve math modülüne sahiptir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Min ve Max",
+      "explanation": "Bir dizi sayı içindeki en küçük veya en büyük değeri bulur.",
+      "default_code": "en_kucuk = min(5, 10, 25)\nen_buyuk = max(5, 10, 25)\nprint(en_kucuk, en_buyuk)"
+    },
+    {
+      "id": 2,
+      "title": "Mutlak Değer (abs)",
+      "explanation": "Sayının negatiflikten kurtulmuş pozitif (mutlak) halini verir.",
+      "default_code": "x = abs(-7.25)\nprint(x)"
+    },
+    {
+      "id": 3,
+      "title": "Üs Alma (pow)",
+      "explanation": "pow(x, y) fonksiyonu x'in y üssünü döndürür.",
+      "default_code": "x = pow(4, 3) # 4 üzeri 3 (4*4*4)\nprint(x)"
+    },
+    {
+      "id": 4,
+      "title": "math Modülü (Karekök)",
+      "explanation": "Gelişmiş işlemler için math modülü kullanılır. Örn: karekök (sqrt).",
+      "default_code": "import math\nx = math.sqrt(64)\nprint(x)"
+    },
+    {
+      "id": 5,
+      "title": "Yukarı/Aşağı Yuvarlama",
+      "explanation": "math.ceil yukarı, math.floor aşağı yuvarlar.",
+      "default_code": "import math\nx = math.ceil(1.4)\ny = math.floor(1.4)\nprint(x, y)"
+    }
+  ]
+}

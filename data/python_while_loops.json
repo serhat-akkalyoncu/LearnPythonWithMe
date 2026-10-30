@@ -1,0 +1,37 @@
+{
+  "topic": "Python While Loops",
+  "order": 19,
+  "description": "While döngüsü, belirli bir koşul doğru (True) olduğu sürece bir dizi ifadeyi çalıştırır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Temel While",
+      "explanation": "Koşul doğru oldukça çalışır.",
+      "default_code": "i = 1\nwhile i < 6:\n  print(i)\n  i += 1"
+    },
+    {
+      "id": 2,
+      "title": "Break İfadesi",
+      "explanation": "Koşul doğru olsa bile döngüyü durdurmak için break kullanılır.",
+      "default_code": "i = 1\nwhile i < 6:\n  print(i)\n  if i == 3:\n    break\n  i += 1"
+    },
+    {
+      "id": 3,
+      "title": "Continue İfadesi",
+      "explanation": "Mevcut yinelemeyi durdurur ve bir sonraki yinelemeyle devam eder.",
+      "default_code": "i = 0\nwhile i < 6:\n  i += 1\n  if i == 3:\n    continue\n  print(i)"
+    },
+    {
+      "id": 4,
+      "title": "Else İfadesi",
+      "explanation": "Koşul artık doğru olmadığında else bloğu çalışır.",
+      "default_code": "i = 1\nwhile i < 6:\n  print(i)\n  i += 1\nelse:\n  print('i artık 6\\'dan küçük değil')"
+    },
+    {
+      "id": 5,
+      "title": "Sonsuz Döngü Tehlikesi",
+      "explanation": "Artış ifadesini unutursanız döngü sonsuza kadar çalışır (Dikkatli olun!).",
+      "default_code": "# i = 1\n# while i < 6:\n#   print(i)\nprint('Artış yapılmazsa bu döngü hiç bitmez!')"
+    }
+  ]
+}

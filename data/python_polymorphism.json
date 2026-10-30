@@ -1,0 +1,37 @@
+{
+  "topic": "Python Polymorphism",
+  "order": 44,
+  "description": "Çok Biçimlilik (Polymorphism), farklı sınıflardaki nesnelerin aynı metot isimlerini kullanabilmesi, ancak bu metotların kendi içlerinde farklı çalışmasıdır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Polimorfizm Nedir?",
+      "explanation": "Poly(çok) ve morph(biçim) demektir. Örneğin len() fonksiyonu hem kelimelerde hem listelerde farklı çalışır.",
+      "default_code": "kelime = 'Elma'\nliste = [1, 2, 3]\n\n# Aynı fonksiyon, farklı nesnelerde farklı davranır:\nprint(len(kelime))\nprint(len(liste))"
+    },
+    {
+      "id": 2,
+      "title": "Sınıflarda Polimorfizm",
+      "explanation": "Farklı sınıfların içinde tamamen aynı isimli metotlar (örn: ses_cikar) yazılabilir.",
+      "default_code": "class Araba:\n  def hareket_et(self):\n    print('Araba yolda sürüyor.')\n\nclass Ucak:\n  def hareket_et(self):\n    print('Uçak gökyüzünde uçuyor.')\n\na = Araba()\nu = Ucak()\na.hareket_et()\nu.hareket_et()"
+    },
+    {
+      "id": 3,
+      "title": "Döngü ile Polimorfizm",
+      "explanation": "Bir liste içindeki farklı nesneleri döngüye sokup hepsinin aynı metodunu tek seferde çağırabiliriz.",
+      "default_code": "class Kedi:\n  def ses(self): print('Miyav')\nclass Kopek:\n  def ses(self): print('Hav')\n\nhayvanlar = [Kedi(), Kopek(), Kedi()]\n\nfor h in hayvanlar:\n  h.ses() # Hangisi olduğuna bakılmaksızın çalışır"
+    },
+    {
+      "id": 4,
+      "title": "Kalıtım ile Polimorfizm",
+      "explanation": "Ebeveyn sınıftaki bir metot, çocuk sınıflarda ezilerek farklı biçimlere sokulur.",
+      "default_code": "class Sekil:\n  def alan(self): pass\n\nclass Kare(Sekil):\n  def alan(self): return 'Karenin alanı'\n\nclass Daire(Sekil):\n  def alan(self): return 'Dairenin alanı'\n\ns1 = Kare()\ns2 = Daire()\nprint(s1.alan())\nprint(s2.alan())"
+    },
+    {
+      "id": 5,
+      "title": "Fonksiyonlarda Polimorfizm",
+      "explanation": "Dışarıdan yazılan bir fonksiyon, nesnenin tipine bakmaksızın içindeki metodu çağırabilir.",
+      "default_code": "class Kus: \n  def uc(self): print('Kuş uçuyor.')\nclass Ucak:\n  def uc(self): print('Uçak uçuyor.')\n\ndef ucus_testi(nesne):\n  nesne.uc() # Nesnenin uc() metodu varsa sorunsuz çalışır\n\nucus_testi(Kus())\nucus_testi(Ucak())"
+    }
+  ]
+}

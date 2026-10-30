@@ -1,0 +1,37 @@
+{
+  "topic": "Python Comments",
+  "order": 5,
+  "description": "Yorum satırları, kodu açıklamak, daha okunabilir hale getirmek için kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Tek Satır Yorum",
+      "explanation": "# işareti ile başlayan her şey Python tarafından göz ardı edilir.",
+      "default_code": "# Bu ekrana bir şey yazdırmaz\nprint('Sadece bu satır çalışır.')"
+    },
+    {
+      "id": 2,
+      "title": "Satır Sonu Yorumu",
+      "explanation": "Bir kod satırının sonuna yorum ekleyebilirsiniz.",
+      "default_code": "print('Merhaba!') # Bu bir selamlama mesajıdır"
+    },
+    {
+      "id": 3,
+      "title": "Çoklu Satır Yorumu",
+      "explanation": "Birden fazla satıra yorum eklemek için her satırın başına # koyabilirsiniz.",
+      "default_code": "# Aşağıdaki kod iki sayıyı toplar\n# ve sonucu ekrana yazdırır.\nprint(5 + 7)"
+    },
+    {
+      "id": 4,
+      "title": "Metin Bloğu ile Yorum",
+      "explanation": "Herhangi bir değişkene atanmamış çok satırlı stringler yorum olarak kullanılabilir.",
+      "default_code": "\"\"\"\nBu çok satırlı\nbir yorum veya açıklama\nbloğudur.\n\"\"\"\nprint('Program devam ediyor...')"
+    },
+    {
+      "id": 5,
+      "title": "Kodu Devre Dışı Bırakmak",
+      "explanation": "Hatalı olduğunu düşündüğünüz bir kodun başına # koyarak geçici olarak çalışmasını engelleyebilirsiniz.",
+      "default_code": "# print('Bu kod şimdilik çalışmasın')\nprint('Aktif kod satırı')"
+    }
+  ]
+}

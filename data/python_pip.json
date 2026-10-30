@@ -1,0 +1,37 @@
+{
+  "topic": "Python PIP",
+  "order": 30,
+  "description": "PIP, Python paketleri (veya modülleri) için bir paket yöneticisidir. Hariçten yazılmış paketleri indirip kurmanızı sağlar.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "PIP Nedir?",
+      "explanation": "Python kurduğunuzda paket kurucu pip de yüklenir. Terminal üzerinden çalışır.",
+      "default_code": "# Terminalde çalıştırılır:\n# pip --version\nprint('PIP terminalden çalıştırılan bir paket yöneticisidir.')"
+    },
+    {
+      "id": 2,
+      "title": "Paket Kurulumu",
+      "explanation": "pip install <paket_adi> komutuyla kurulur.",
+      "default_code": "# Terminal kodu:\n# pip install camelcase\nprint('Kurulum başarıyla tamamlandı (Simülasyon)')"
+    },
+    {
+      "id": 3,
+      "title": "Kurulu Paketi Kullanma",
+      "explanation": "Kurulan paket normal bir modül gibi import edilir.",
+      "default_code": "# import camelcase\n# c = camelcase.CamelCase()\n# print(c.hump('merhaba dunya'))\nprint('Kurulan paket import ile kullanılır.')"
+    },
+    {
+      "id": 4,
+      "title": "Paket Silme",
+      "explanation": "pip uninstall <paket_adi> komutu kullanılır.",
+      "default_code": "# Terminal kodu:\n# pip uninstall camelcase\nprint('Paket silindi (Simülasyon).')"
+    },
+    {
+      "id": 5,
+      "title": "Kurulu Paketleri Listeleme",
+      "explanation": "Sisteminizde yüklü tüm paketleri listeler.",
+      "default_code": "# Terminal kodu:\n# pip list\nprint('Yüklü paketler terminalde listelenir.')"
+    }
+  ]
+}

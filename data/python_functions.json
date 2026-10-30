@@ -1,0 +1,37 @@
+{
+  "topic": "Python Functions",
+  "order": 21,
+  "description": "Fonksiyon, yalnızca çağrıldığında çalışan bir kod bloğudur. İçine parametre alabilir ve sonuç döndürebilir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Fonksiyon Oluşturma",
+      "explanation": "def anahtar kelimesi ile oluşturulur ve çağrılır.",
+      "default_code": "def selam_ver():\n  print('Merhaba, fonksiyondan selamlar!')\n\nselam_ver()"
+    },
+    {
+      "id": 2,
+      "title": "Parametre Alan Fonksiyon",
+      "explanation": "İçine değerler göndererek çalışmasını değiştirebilirsiniz.",
+      "default_code": "def selamla(isim):\n  print('Merhaba ' + isim)\n\nselamla('Ahmet')\nselamla('Ayşe')"
+    },
+    {
+      "id": 3,
+      "title": "Varsayılan Parametre",
+      "explanation": "Parametre gönderilmezse varsayılan değer kullanılır.",
+      "default_code": "def ulke_yaz(ulke = 'Türkiye'):\n  print('Benim ülkem ' + ulke)\n\nulke_yaz('Almanya')\nulke_yaz()"
+    },
+    {
+      "id": 4,
+      "title": "Return Değeri",
+      "explanation": "Fonksiyonun bir değer döndürmesi için return kullanılır.",
+      "default_code": "def carp(x):\n  return 5 * x\n\nprint(carp(3))\nprint(carp(5))"
+    },
+    {
+      "id": 5,
+      "title": "*args (Bilinmeyen Sayıda Parametre)",
+      "explanation": "Kaç parametre geleceğini bilmiyorsanız yıldız (*) eklersiniz.",
+      "default_code": "def en_kucuk(*cocuklar):\n  print('En küçük çocuk: ' + cocuklar[2])\n\nen_kucuk('Ali', 'Veli', 'Can')"
+    }
+  ]
+}

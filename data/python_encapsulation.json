@@ -1,0 +1,37 @@
+{
+  "topic": "Python Encapsulation",
+  "order": 45,
+  "description": "Kapsülleme (Encapsulation), bir nesnenin verilerini (değişkenlerini) dışarıdan erişime kapatmak, gizlemek ve korumak anlamına gelir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Kapsülleme Nedir?",
+      "explanation": "Banka hesabındaki bakiye gibi önemli verilerin dışarıdan doğrudan ('hesap.bakiye = 100000' şeklinde) değiştirilmesini engelleriz.",
+      "default_code": "print('Değişkenlerin başına alt çizgi konularak erişim sınırlandırılır.')"
+    },
+    {
+      "id": 2,
+      "title": "Yarı Gizli (Protected) Üyeler",
+      "explanation": "Değişkenin başına tek alt çizgi (_) koymak 'Lütfen dışarıdan dokunma, bu benim iç işim' anlamına gelir (Kural değil, centilmenlik anlaşmasıdır).",
+      "default_code": "class Kasa:\n  def __init__(self):\n    self._korumali_sifre = '1234'\n\nk = Kasa()\nprint(k._korumali_sifre) # Python engel olmaz ama uyarı niteliğindedir."
+    },
+    {
+      "id": 3,
+      "title": "Tam Gizli (Private) Üyeler",
+      "explanation": "Değişkenin başına çift alt çizgi (__) koyduğunuzda Python o değişkene dışarıdan erişimi tamamen kapatır.",
+      "default_code": "class Banka:\n  def __init__(self):\n    self.__gizli_bakiye = 500\n\nb = Banka()\n# print(b.__gizli_bakiye) # Bu kodu çalıştırırsanız HATA alırsınız.\nprint('Gizli veriye dışarıdan erişilemez!')"
+    },
+    {
+      "id": 4,
+      "title": "Gizli Veriye Nasıl Erişilir?",
+      "explanation": "Gizli değişkenleri okumak veya değiştirmek için Getter (Okuyucu) ve Setter (Değiştirici) adını verdiğimiz metotlar yazarız.",
+      "default_code": "class Kasa:\n  def __init__(self):\n    self.__sifre = '0000'\n  \n  def sifreyi_getir(self): # Getter\n    return self.__sifre\n\nk = Kasa()\nprint('Kasa Şifresi:', k.sifreyi_getir())"
+    },
+    {
+      "id": 5,
+      "title": "Getter ve Setter ile Kontrol",
+      "explanation": "Kapsülleme sayesinde, verinin değiştirilmeden önce kurallara uyup uymadığını kontrol edebiliriz.",
+      "default_code": "class Kullanici:\n  def __init__(self):\n    self.__yas = 0\n    \n  def yas_Ayarla(self, yeni_yas):\n    if yeni_yas > 0: # Negatif yaş girilmesini engelledik\n      self.__yas = yeni_yas\n    else:\n      print('Yaş negatif olamaz!')\n      \n  def yas_Getir(self):\n    return self.__yas\n\nk = Kullanici()\nk.yas_Ayarla(-5)\nk.yas_Ayarla(25)\nprint(k.yas_Getir())"
+    }
+  ]
+}

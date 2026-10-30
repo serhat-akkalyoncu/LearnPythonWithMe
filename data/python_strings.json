@@ -1,0 +1,37 @@
+{
+  "topic": "Python Strings",
+  "order": 10,
+  "description": "Python'da metinler (strings) tek veya çift tırnak içinde yazılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "String Oluşturma",
+      "explanation": "Tek tırnak da çift tırnak da aynı sonucu verir.",
+      "default_code": "print('Merhaba')\nprint(\"Merhaba\")"
+    },
+    {
+      "id": 2,
+      "title": "Çok Satırlı String",
+      "explanation": "Üç tırnak işareti ile çok satırlı metinler oluşturabilirsiniz.",
+      "default_code": "metin = '''Bu metin\nbirden fazla\nsatıra yayılmıştır.'''\nprint(metin)"
+    },
+    {
+      "id": 3,
+      "title": "String'ler Dizidir",
+      "explanation": "Stringler karakter dizileridir. Köşeli parantez ile belirli bir karaktere erişebilirsiniz.",
+      "default_code": "a = 'Python'\nprint(a[1]) # 'y' harfini verir (ilk karakter 0'dır)"
+    },
+    {
+      "id": 4,
+      "title": "Döngü ile String",
+      "explanation": "Bir string içindeki karakterleri for döngüsü ile tek tek dolaşabilirsiniz.",
+      "default_code": "for x in 'muz':\n    print(x)"
+    },
+    {
+      "id": 5,
+      "title": "String Uzunluğu",
+      "explanation": "len() fonksiyonu stringin kaç karakterden oluştuğunu verir.",
+      "default_code": "a = 'Merhaba Dünya!'\nprint('Uzunluk:', len(a))"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "topic": "Python Try...Except",
+  "order": 31,
+  "description": "try bloğu kodu hatalara karşı test etmenizi, except bloğu hatayı işlemenizi, finally bloğu ise kodun her halükarda çalışmasını sağlar.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Hata Yakalama (Try Except)",
+      "explanation": "Hata oluştuğunda programın çökmesini engeller.",
+      "default_code": "try:\n  print(tanimsiz_degisken)\nexcept:\n  print('Bir hata oluştu, muhtemelen değişken tanımlı değil.')"
+    },
+    {
+      "id": 2,
+      "title": "Belirli Bir Hatayı Yakalama",
+      "explanation": "Hatanın türüne göre (ör. NameError) farklı mesajlar verebilirsiniz.",
+      "default_code": "try:\n  print(x)\nexcept NameError:\n  print('x değişkeni tanımlanmamış!')\nexcept:\n  print('Başka bir hata oluştu.')"
+    },
+    {
+      "id": 3,
+      "title": "Else İfadesi",
+      "explanation": "Hiç hata oluşmazsa else bloğu çalıştırılır.",
+      "default_code": "try:\n  print('Merhaba')\nexcept:\n  print('Hata oluştu')\nelse:\n  print('Hiçbir hata oluşmadı.')"
+    },
+    {
+      "id": 4,
+      "title": "Finally İfadesi",
+      "explanation": "Hata olsun ya da olmasın her koşulda çalışır (Dosya veya bağlantı kapatmak için kullanılır).",
+      "default_code": "try:\n  print(x)\nexcept:\n  print('Bir şeyler yanlış gitti.')\nfinally:\n  print('Try-except bloğu bitti.')"
+    },
+    {
+      "id": 5,
+      "title": "Hata Fırlatma (Raise)",
+      "explanation": "İstediğiniz bir durumda bilerek hata üretebilirsiniz.",
+      "default_code": "x = -1\nif x < 0:\n  print('Hata fırlatılıyor...')\n  # raise Exception('Sayı sıfırdan küçük olamaz!')"
+    }
+  ]
+}

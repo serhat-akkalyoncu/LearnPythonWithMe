@@ -1,0 +1,37 @@
+{
+  "topic": "Python Class Properties",
+  "order": 40,
+  "description": "Sınıf özellikleri (Properties), sınıfların ve nesnelerin sahip olduğu verilerdir (değişkenler). Nesnelere dışarıdan yeni özellikler de eklenebilir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Sınıf Düzeyi (Class Attribute)",
+      "explanation": "Tüm nesneler için ortak olan özelliklerdir. __init__ dışında tanımlanırlar.",
+      "default_code": "class Kus:\n  tur = 'Kanatlı Hayvan' # Sınıf düzeyi özellik\n  \n  def __init__(self, isim):\n    self.isim = isim # Nesne düzeyi özellik\n\nk1 = Kus('Maviş')\nprint(k1.isim, k1.tur)"
+    },
+    {
+      "id": 2,
+      "title": "Nesne Düzeyi (Instance Attribute)",
+      "explanation": "Her nesnenin kendine has özelliğidir. Genellikle __init__ içinde tanımlanır.",
+      "default_code": "class Ogrenci:\n  def __init__(self, isim, not_ortalamasi):\n    self.isim = isim\n    self.not_ortalamasi = not_ortalamasi\n\no1 = Ogrenci('Ayşe', 85)\nprint(o1.isim, o1.not_ortalamasi)"
+    },
+    {
+      "id": 3,
+      "title": "Özelliği Dışarıdan Ekleme",
+      "explanation": "Python esnektir. Nesneye sınıfta tanımlanmayan bir özelliği sonradan nokta (.) ile ekleyebilirsiniz.",
+      "default_code": "class BosSinif:\n  pass\n\nnesne = BosSinif()\nnesne.yeni_ozellik = 'Sonradan eklendi'\nprint(nesne.yeni_ozellik)"
+    },
+    {
+      "id": 4,
+      "title": "Özelliği Silme (del)",
+      "explanation": "Bir nesneden belirli bir özelliği (veya nesnenin tamamını) del anahtar kelimesi ile silebiliriz.",
+      "default_code": "class Kutu:\n  def __init__(self):\n    self.renk = 'Mavi'\n    self.boyut = 'Büyük'\n\nk = Kutu()\ndel k.boyut\nprint(k.renk)\n# print(k.boyut) # Hata verir, çünkü silindi"
+    },
+    {
+      "id": 5,
+      "title": "Property Decorator (@property)",
+      "explanation": "İleri seviye olarak; metotları sanki bir değişkenmiş (özellikmiş) gibi çağırmamızı sağlar.",
+      "default_code": "class Daire:\n  def __init__(self, yaricap):\n    self.yaricap = yaricap\n    \n  @property\n  def alan(self):\n    return 3.14 * self.yaricap ** 2\n\nd = Daire(5)\nprint('Alan:', d.alan) # d.alan() yerine d.alan yazdık"
+    }
+  ]
+}

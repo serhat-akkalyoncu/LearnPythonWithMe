@@ -1,0 +1,37 @@
+{
+  "topic": "Python Iterators",
+  "order": 24,
+  "description": "Yineleyici (Iterator), sayılabilecek miktarda değer içeren bir nesnedir. Listeler, tuple'lar, sözlükler ve setler yinelenebilir (iterable) nesnelerdir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "iter() ve next()",
+      "explanation": "Yinelenebilir bir nesneden yineleyici alıp sırayla öğeleri çekebilirsiniz.",
+      "default_code": "meyveler = ('elma', 'muz', 'kiraz')\nbenim_iter = iter(meyveler)\nprint(next(benim_iter))\nprint(next(benim_iter))"
+    },
+    {
+      "id": 2,
+      "title": "String'ler de Yinelenebilir",
+      "explanation": "Metinler de birer karakter dizisidir ve iteratör döndürür.",
+      "default_code": "kelime = 'muz'\nbenim_iter = iter(kelime)\nprint(next(benim_iter))\nprint(next(benim_iter))"
+    },
+    {
+      "id": 3,
+      "title": "For Döngüsü Arka Planda Ne Yapar?",
+      "explanation": "For döngüsü, yinelenebilir nesne için otomatik iter() ve next() çağırır.",
+      "default_code": "meyveler = ('elma', 'muz')\nfor x in meyveler:\n  print(x)"
+    },
+    {
+      "id": 4,
+      "title": "Sözlüklerde Iteratör",
+      "explanation": "Sözlüklerde dolaşırken anahtarlar iterasyona girer.",
+      "default_code": "sozluk = {'a': 1, 'b': 2}\niter_s = iter(sozluk)\nprint(next(iter_s))\nprint(next(iter_s))"
+    },
+    {
+      "id": 5,
+      "title": "StopIteration Hatası",
+      "explanation": "Eleman bittiğinde next() çağrılırsa StopIteration alınır.",
+      "default_code": "liste = [1]\nit = iter(liste)\nprint(next(it))\n# print(next(it)) # Bu satır hata fırlatır!"
+    }
+  ]
+}

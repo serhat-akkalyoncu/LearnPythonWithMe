@@ -1,0 +1,37 @@
+{
+  "topic": "Python Tuples",
+  "order": 14,
+  "description": "Tuple'lar listelere benzer ancak değiştirilemezler (immutable).",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Tuple Oluşturma",
+      "explanation": "Normal parantez kullanılır.",
+      "default_code": "t = ('elma', 'muz', 'kiraz')\nprint(t)"
+    },
+    {
+      "id": 2,
+      "title": "Tuple'a Erişme",
+      "explanation": "İndeks ile erişilir.",
+      "default_code": "t = ('elma', 'muz', 'kiraz')\nprint(t[0])"
+    },
+    {
+      "id": 3,
+      "title": "Tuple Değiştirilemez",
+      "explanation": "Bir kez oluşturulduktan sonra öğeleri değiştiremezsiniz (Kasıtlı Hata).",
+      "default_code": "t = ('elma', 'muz')\n# t[0] = 'kivi' # Bu satır hata verir\nprint(t)"
+    },
+    {
+      "id": 4,
+      "title": "Unpacking (Paket Açma)",
+      "explanation": "Tuple'daki değerleri değişkenlere çıkarabilirsiniz.",
+      "default_code": "t = ('elma', 'muz', 'kiraz')\n(yesil, sari, kirmizi) = t\nprint(yesil)\nprint(sari)"
+    },
+    {
+      "id": 5,
+      "title": "Tuple Döngüsü",
+      "explanation": "For döngüsü ile tuple'da gezinebilirsiniz.",
+      "default_code": "t = ('elma', 'muz')\nfor x in t:\n  print(x)"
+    }
+  ]
+}

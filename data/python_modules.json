@@ -1,0 +1,37 @@
+{
+  "topic": "Python Modules",
+  "order": 25,
+  "description": "Modül, uygulamanıza dahil etmek istediğiniz bir dizi işlevi veya değişkeni barındıran bir koddur (kod kütüphanesi).",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Modül İçeri Aktarma (Import)",
+      "explanation": "Yerleşik bir modülü import ile ekleyip içindeki fonksiyonları kullanabilirsiniz.",
+      "default_code": "import platform\nprint(platform.system())"
+    },
+    {
+      "id": 2,
+      "title": "Modüle Takma Ad (Alias) Verme",
+      "explanation": "Modülü 'as' anahtar kelimesi ile kısaltabilirsiniz.",
+      "default_code": "import platform as pt\nprint(pt.system())"
+    },
+    {
+      "id": 3,
+      "title": "Modül İçeriğini Listeleme (dir)",
+      "explanation": "Modülün içindeki tüm isimleri dir() fonksiyonu ile görebilirsiniz.",
+      "default_code": "import platform\nprint(dir(platform)[:5]) # İlk 5 özelliği görelim"
+    },
+    {
+      "id": 4,
+      "title": "from İle Belirli Bölümleri Alma",
+      "explanation": "Modülün tamamını değil, sadece ihtiyacınız olan fonksiyonu içe aktarabilirsiniz.",
+      "default_code": "from math import pi\nprint('Pi sayısı:', pi)"
+    },
+    {
+      "id": 5,
+      "title": "Kendi Modülünü Yazma Fikri",
+      "explanation": "Farklı bir .py dosyası oluşturup onu import edebilirsiniz. (Örnek simulasyondur).",
+      "default_code": "# import modulum\n# modulum.selamla()\nprint('Modüller harici .py dosyalarından okunur.')"
+    }
+  ]
+}

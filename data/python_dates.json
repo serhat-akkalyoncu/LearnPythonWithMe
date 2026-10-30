@@ -1,0 +1,37 @@
+{
+  "topic": "Python Dates",
+  "order": 26,
+  "description": "Python'da tarihlerin kendine ait bir veri tipi yoktur, ancak tarihlerle çalışmak için datetime adlı yerleşik bir modülü içe aktarabiliriz.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Şu Anki Tarih ve Zaman",
+      "explanation": "datetime.now() ile mevcut tarihi ve saati alabilirsiniz.",
+      "default_code": "import datetime\nx = datetime.datetime.now()\nprint(x)"
+    },
+    {
+      "id": 2,
+      "title": "Yıl ve Haftanın Günü",
+      "explanation": "Tarih nesnesinin niteliklerine erişebilirsiniz.",
+      "default_code": "import datetime\nx = datetime.datetime.now()\nprint('Yıl:', x.year)\nprint('Haftanın günü:', x.strftime('%A'))"
+    },
+    {
+      "id": 3,
+      "title": "Tarih Nesnesi Oluşturma",
+      "explanation": "Belirli bir tarihi manuel oluşturabilirsiniz (Yıl, Ay, Gün).",
+      "default_code": "import datetime\nx = datetime.datetime(2020, 5, 17)\nprint(x)"
+    },
+    {
+      "id": 4,
+      "title": "Tarih Formatlama (strftime)",
+      "explanation": "Tarih nesnelerini okunabilir dizelere (string) dönüştürebilirsiniz. %B ayı tam yazar.",
+      "default_code": "import datetime\nx = datetime.datetime(2018, 6, 1)\nprint(x.strftime('%B'))"
+    },
+    {
+      "id": 5,
+      "title": "Sadece Tarih, Sadece Saat",
+      "explanation": "Tarih objesinden sadece tarih veya saat bilgisini de ayırabiliriz.",
+      "default_code": "import datetime\nx = datetime.datetime.now()\nprint(x.date())\nprint(x.time())"
+    }
+  ]
+}
