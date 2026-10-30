@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Öğreniyorum</title>
+    <!-- Tarayıcı sekmesindeki başlığa adını ekledik -->
+    <title>Serhat Akkalyoncu ile Python Öğreniyorum</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; height: 100vh; margin: 0; background-color: #f4f4f9; }
         #sidebar { width: 280px; background: #2c3e50; color: white; display: flex; flex-direction: column; }
         .sidebar-section { padding: 15px; display: flex; flex-direction: column; flex: 1; border-bottom: 2px solid #1a252f; overflow: hidden; }
-        .sidebar-section h2 { margin-top: 0; font-size: 18px; color: #ecf0f1; }
+        .sidebar-section h2 { margin-top: 0; margin-bottom: 5px; font-size: 18px; color: #ecf0f1; }
+        
+        /* Adını göstermek için yeni bir stil */
+        .developer-name { font-size: 12px; color: #f39c12; margin-bottom: 10px; font-weight: bold; letter-spacing: 0.5px; }
+        
         .scrollable-list { overflow-y: auto; flex: 1; }
         .example-list { list-style: none; padding: 0; margin: 0; }
         .example-list li { cursor: pointer; padding: 10px; border-bottom: 1px solid #34495e; font-size: 14px; }
         .example-list li:hover { background-color: #34495e; }
         
-        /* Kaydırma çubuğu makyajı */
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #2c3e50; }
         ::-webkit-scrollbar-thumb { background: #7f8c8d; border-radius: 3px; }
@@ -32,6 +36,8 @@
         <!-- Dinamik Konu Listesi -->
         <div class="sidebar-section">
             <h2>Python Konuları</h2>
+            <!-- Sol menüye ismini ekledik -->
+            <div class="developer-name">Geliştirici: Serhat Akkalyoncu</div>
             <div class="scrollable-list">
                 <ul id="topic-list" class="example-list"></ul>
             </div>
