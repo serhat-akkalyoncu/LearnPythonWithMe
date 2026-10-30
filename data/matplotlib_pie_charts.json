@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Pie Charts",
+  "order": 67,
+  "description": "Pasta Grafikleri (Pie Charts), verilerin bütüne oranını (yüzdelik dilimlerini) daire şeklinde göstermek için kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Pasta Grafik Çizimi (pie)",
+      "explanation": "plt.pie(değerler) ile verilen sayısal büyüklüklere göre 360 derecelik daire dilimlere bölünür.",
+      "default_code": "# y = [35, 25, 25, 15] # Toplam 100\n# plt.pie(y)\nprint('Büyük değerler daha geniş dilim aldı, pasta oluştu.')"
+    },
+    {
+      "id": 2,
+      "title": "Dilimlere İsim Vermek (labels)",
+      "explanation": "Pastanın her diliminin yanına ne olduğunu yazmak için liste halinde etiketler veririz.",
+      "default_code": "# meyveler = ['Elma', 'Muz', 'Kiraz', 'Kavun']\n# plt.pie(y, labels=meyveler)\nprint('Her renkli dilimin yanına meyve isimleri yazıldı.')"
+    },
+    {
+      "id": 3,
+      "title": "Başlangıç Açısı (startangle)",
+      "explanation": "Varsayılan olarak ilk dilim x ekseninden (sağ orta kısımdan) başlayıp saat yönünün tersine çizilir. Açıyı değiştirebilirsiniz.",
+      "default_code": "# plt.pie(y, labels=meyveler, startangle=90)\nprint('İlk dilim sağdan değil, tam saat 12 yönünden (tepeden) çizilmeye başlar.')"
+    },
+    {
+      "id": 4,
+      "title": "Dilimi Pastadan Ayırmak (explode)",
+      "explanation": "Vurgulamak istediğiniz bir dilimi (veya dilimleri) pastadan hafifçe dışarı çekebilirsiniz.",
+      "default_code": "# kopma = [0.2, 0, 0, 0] # Sadece ilk dilimi (Elma) 0.2 oranında dışarı çek\n# plt.pie(y, labels=meyveler, explode=kopma)\nprint('Elma dilimi pastadan ayrılıp öne çıktı.')"
+    },
+    {
+      "id": 5,
+      "title": "Gölgelendirme (shadow)",
+      "explanation": "Grafiğe 3 boyutlu bir görünüm (derinlik) kazandırmak için alt kısımlara gölge eklenir.",
+      "default_code": "# plt.pie(y, labels=meyveler, explode=kopma, shadow=True)\nprint('Kopan dilimin altındaki pastaya gölgesi düşer, daha şık görünür.')"
+    }
+  ]
+}

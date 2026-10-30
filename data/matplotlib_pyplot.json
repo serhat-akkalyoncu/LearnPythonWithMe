@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Pyplot",
+  "order": 57,
+  "description": "Pyplot, Matplotlib kütüphanesinin Matlab benzeri bir arayüz sağlayan modülüdür. Çoğu grafik işlemi bununla yapılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Pyplot İçe Aktarma",
+      "explanation": "pyplot alt modülü her zaman plt kısaltması ile içe aktarılır.",
+      "default_code": "import matplotlib.pyplot as plt\nprint('plt kısaltması bir standarttır.')"
+    },
+    {
+      "id": 2,
+      "title": "Şekil (Figure) Oluşturma",
+      "explanation": "Çizim yapacağımız boş tuvale Figure denir. plt.figure() ile yeni tuval açılır.",
+      "default_code": "print('Arka planda plt.figure() otomatik çağrılır ama detaylı ayarlar için manuel açılabilir.')"
+    },
+    {
+      "id": 3,
+      "title": "Basit Bir Fonksiyon Çizimi",
+      "explanation": "Y değerlerini bir matematik formülüne göre vererek eğriler çizebiliriz.",
+      "default_code": "import numpy as np\n# x ekseninde 0 ile 10 arasında 100 eşit parça oluştur\nx = np.linspace(0, 10, 100)\n# y = x'in karesi\ny = x ** 2\n# plt.plot(x, y)\nprint('x ve x karesi değerleriyle parabolik bir eğri çizildi.')"
+    },
+    {
+      "id": 4,
+      "title": "Grafiği Ekranda Tutma",
+      "explanation": "Bazı sistemlerde grafik penceresi hemen kapanır. plt.show() komutu grafik penceresini biz kapatana kadar açık tutar.",
+      "default_code": "print('Kodun en sonuna plt.show() eklemeyi unutmayın.')"
+    },
+    {
+      "id": 5,
+      "title": "Grafiği Dosyaya Kaydetme",
+      "explanation": "Çizdiğimiz grafiği ekranda göstermek yerine PNG veya PDF olarak bilgisayara kaydedebiliriz.",
+      "default_code": "# plt.savefig('benim_grafigim.png')\nprint('savefig() ile çizimler resim dosyası olarak kaydedilebilir.')"
+    }
+  ]
+}

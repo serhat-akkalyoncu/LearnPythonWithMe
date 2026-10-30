@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Labels",
+  "order": 61,
+  "description": "Grafiğin X ve Y eksenlerine ne anlama geldiklerini belirten etiketler (isimler) ve grafiğin en üstüne bir ana başlık ekleriz.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Eksen Etiketleri (xlabel, ylabel)",
+      "explanation": "X eksenine (yatay) ve Y eksenine (dikey) açıklayıcı metinler ekler.",
+      "default_code": "# plt.xlabel('Zaman (Gün)')\n# plt.ylabel('Sıcaklık (Derece)')\nprint('Eksenlerin neyi temsil ettiği belirtildi.')"
+    },
+    {
+      "id": 2,
+      "title": "Grafik Başlığı (title)",
+      "explanation": "Grafiğin en üstüne genel bir isim/başlık eklemek için kullanılır.",
+      "default_code": "# plt.title('Ağustos Ayı Sıcaklık Değişimi')\nprint('Grafiğin tam ortasına üst kısma başlık yerleştirilir.')"
+    },
+    {
+      "id": 3,
+      "title": "Etiket Font Özellikleri (fontdict)",
+      "explanation": "Eklediğimiz yazıların yazı tipini, rengini ve boyutunu bir sözlük (dictionary) aracılığıyla ayarlayabiliriz.",
+      "default_code": "# font1 = {'family':'serif', 'color':'blue', 'size':20}\n# plt.title('Sıcaklık', fontdict = font1)\nprint('Başlık mavi, serif fontlu ve büyük harflerle yazıldı.')"
+    },
+    {
+      "id": 4,
+      "title": "Başlık Hizalama (loc)",
+      "explanation": "Başlığı ortada ('center' - varsayılan), solda ('left') veya sağda ('right') konumlandırabilirsiniz.",
+      "default_code": "# plt.title('Sıcaklık', loc = 'left')\nprint('Başlık grafiğin sol üst köşesine hizalandı.')"
+    },
+    {
+      "id": 5,
+      "title": "Legend (Gösterge/Lejant)",
+      "explanation": "Hangi rengin neyi temsil ettiğini anlatan küçük bilgi kutusunu açar.",
+      "default_code": "# plt.plot(x, y, label='Harcamalar')\n# plt.legend()\nprint('Köşede Harcamalar etiketli küçük bir kutu açılır.')"
+    }
+  ]
+}

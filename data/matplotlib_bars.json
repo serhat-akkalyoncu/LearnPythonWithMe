@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Bars",
+  "order": 65,
+  "description": "Bar (Çubuk) grafikleri, kategorik verilerin (Örn: yıllar, şehirler) değerlerini dik veya yatay dikdörtgen çubuklarla göstermek için kullanılır.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Dikey Çubuk Grafik (bar)",
+      "explanation": "plt.bar(kategoriler, degerler) fonksiyonu ile klasik sütun (dik çubuk) grafiği çizilir.",
+      "default_code": "# x = ['A', 'B', 'C', 'D']\n# y = [3, 8, 1, 10]\n# plt.bar(x, y)\nprint('A, B, C, D kategorileri için farklı boylarda çubuklar çizildi.')"
+    },
+    {
+      "id": 2,
+      "title": "Yatay Çubuk Grafik (barh)",
+      "explanation": "Çubukları aşağıdan yukarı değil, soldan sağa uzatmak için bar() yerine barh() (horizontal) kullanılır.",
+      "default_code": "# plt.barh(x, y)\nprint('Çubuklar artık soldan sağa yatay olarak uzanıyor.')"
+    },
+    {
+      "id": 3,
+      "title": "Çubuk Renkleri",
+      "explanation": "Tüm çubukların rengini color parametresi ile tek renge veya bir liste vererek her birini farklı renge boyayabilirsiniz.",
+      "default_code": "# plt.bar(x, y, color='red')\nprint('Tüm sütunlar kırmızı oldu.')"
+    },
+    {
+      "id": 4,
+      "title": "Çubuk Kalınlığı / Genişliği (width)",
+      "explanation": "Dikey grafiklerde çubukların ne kadar ince/kalın olacağını belirler (varsayılan 0.8'dir).",
+      "default_code": "# plt.bar(x, y, width = 0.1)\nprint('İp gibi çok ince çubuklar elde edildi.')"
+    },
+    {
+      "id": 5,
+      "title": "Yatay Kalınlık (height)",
+      "explanation": "Eğer grafik yatay (barh) ise, genişliği ayarlamak için width değil, height parametresi kullanılır.",
+      "default_code": "# plt.barh(x, y, height = 0.1)\nprint('Yatay çubuklar inceltildi.')"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Plotting",
+  "order": 58,
+  "description": "Plotting, verileri (x, y) düzleminde çizgiler veya noktalar olarak görselleştirme eylemidir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Plot (Çizgi Grafik)",
+      "explanation": "Varsayılan olarak plot() noktaları uç uca düz bir çizgi ile bağlar.",
+      "default_code": "print('plot() sürekli verileri (zaman içindeki değişim gibi) göstermek için idealdir.')"
+    },
+    {
+      "id": 2,
+      "title": "Aynı Tuvalde İki Çizgi",
+      "explanation": "plt.plot() komutunu alt alta iki kez yazarsanız, her ikisi de aynı grafik üzerinde görünür.",
+      "default_code": "# plt.plot(y1)\n# plt.plot(y2)\nprint('Matplotlib iki çizginin farklı renklerde olmasını otomatik ayarlar.')"
+    },
+    {
+      "id": 3,
+      "title": "Z Ekseni (3D Çizim)?",
+      "explanation": "Matplotlib varsayılan olarak 2D'dir. 3D grafikler için 'mplot3d' araç kiti (toolkit) eklenmelidir.",
+      "default_code": "print('İleri seviyede 3 boyutlu yüzey ve nokta grafikleri de çizilebilir.')"
+    },
+    {
+      "id": 4,
+      "title": "Kategorik Veri Plotlama",
+      "explanation": "X eksenine sayılar yerine kelimeler (kategoriler) de koyabilirsiniz.",
+      "default_code": "# x = ['Elma', 'Armut', 'Muz']\n# y = [10, 25, 15]\n# plt.plot(x, y)\nprint('X ekseninde isimler, Y ekseninde satış miktarları gösterilebilir.')"
+    },
+    {
+      "id": 5,
+      "title": "Eksen Sınırlarını Belirleme",
+      "explanation": "Grafiğin sadece belirli bir bölümünü görmek istiyorsak xlim ve ylim kullanırız.",
+      "default_code": "# plt.xlim([0, 10]) # X ekseni 0'dan 10'a kadar görünsün\n# plt.ylim([0, 100]) # Y ekseni 0'dan 100'e kadar görünsün\nprint('Grafiğe yakınlaştırma (zoom) yapılmış gibi olur.')"
+    }
+  ]
+}

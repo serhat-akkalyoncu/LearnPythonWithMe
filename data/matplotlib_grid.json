@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Grid",
+  "order": 62,
+  "description": "Grid (Izgara), verilerin eksenlerdeki değerlerini daha rahat okuyabilmek için grafiğin arka planına çizilen kılavuz çizgileridir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Izgara Ekleme",
+      "explanation": "plt.grid() fonksiyonu grafiğin arka planına ızgara çizgileri çizer.",
+      "default_code": "# plt.plot(x, y)\n# plt.grid()\nprint('Kareli defter gibi bir arka plan oluştu.')"
+    },
+    {
+      "id": 2,
+      "title": "Belirli Bir Eksene Izgara",
+      "explanation": "Sadece yatay (y ekseni) veya sadece dikey (x ekseni) ızgara çizgileri çizebilirsiniz.",
+      "default_code": "# plt.grid(axis = 'x')\nprint('Sadece dikey (X değerlerinden yukarı çıkan) çizgiler görünür.')"
+    },
+    {
+      "id": 3,
+      "title": "Izgara Çizgisi Stilini Değiştirme",
+      "explanation": "Tıpkı plot() çizgilerinde olduğu gibi ızgaranın da rengini, kalınlığını ve stilini (ls) ayarlayabilirsiniz.",
+      "default_code": "# plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)\nprint('Arka planda yeşil, kesik kesik, ince bir ızgara oluştu.')"
+    },
+    {
+      "id": 4,
+      "title": "Minör Grid (Ara Çizgiler)",
+      "explanation": "Ana rakamlar arasına daha sık ve daha soluk küçük ızgara çizgileri (minor ticks) ekleyebilirsiniz.",
+      "default_code": "print('plt.minorticks_on() ve plt.grid(which=\"minor\") ile detaylı ızgara açılır.')"
+    },
+    {
+      "id": 5,
+      "title": "Izgarayı Kapatmak",
+      "explanation": "Zaten açık olan veya temadan gelen ızgarayı kaldırmak için kullanılır.",
+      "default_code": "# plt.grid(False)\nprint('Arka plan tamamen düz ve boş (beyaz) hale geldi.')"
+    }
+  ]
+}

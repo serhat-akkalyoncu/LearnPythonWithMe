@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Line",
+  "order": 60,
+  "description": "Markerlar noktaları düzenlerken, noktalar arasındaki çizgilerin stili, rengi ve kalınlığı da ayrıca ayarlanabilir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Çizgi Stili (linestyle / ls)",
+      "explanation": "Çizgiyi noktalı (dotted), kesik kesik (dashed) veya düz yapabilirsiniz.",
+      "default_code": "# plt.plot(y, linestyle = 'dotted')\n# Kısa yazım: plt.plot(y, ls = ':')\nprint('Çizgi, yan yana küçük noktalardan oluşacak.')"
+    },
+    {
+      "id": 2,
+      "title": "Çizgi Rengi (color / c)",
+      "explanation": "İngilizce renk adı ('red'), kısa kod ('r') veya HEX kod ('#4CAF50') verilebilir.",
+      "default_code": "# plt.plot(y, color = 'hotpink')\nprint('Çizgi parlak pembe renginde çizildi.')"
+    },
+    {
+      "id": 3,
+      "title": "Çizgi Kalınlığı (linewidth / lw)",
+      "explanation": "Çizginin ne kadar kalın olacağını (nokta/piksel cinsinden) ayarlar.",
+      "default_code": "# plt.plot(y, linewidth = '20.5')\nprint('Kalın, markerları bile yutabilecek kadar geniş bir çizgi elde edildi.')"
+    },
+    {
+      "id": 4,
+      "title": "Birden Fazla Çizgi (Ayrı Ayrı)",
+      "explanation": "Sürekli plot çağırarak tuvale yeni çizgiler ekleyebiliriz.",
+      "default_code": "# plt.plot(y1)\n# plt.plot(y2)\nprint('Tuvalde iki ayrı eğri oluşur.')"
+    },
+    {
+      "id": 5,
+      "title": "Tek Kodla Çoklu Çizgi",
+      "explanation": "plt.plot() içine ardışık olarak (x1, y1, x2, y2) vererek tek seferde çoklu çizim yapılabilir.",
+      "default_code": "# plt.plot(x1, y1, x2, y2)\nprint('İki veri seti tek fonksiyonda aynı anda çizildi.')"
+    }
+  ]
+}

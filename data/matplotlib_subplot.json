@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Subplot",
+  "order": 63,
+  "description": "Subplot (Alt Grafik), tek bir resim (Figure) içine yan yana veya alt alta birden fazla farklı grafik çizmemizi sağlar.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Subplot Mantığı",
+      "explanation": "subplot(satır_sayısı, sütun_sayısı, grafik_no) formatında çalışır. Tuvali bölümlere ayırır.",
+      "default_code": "# plt.subplot(1, 2, 1) # 1 satır, 2 sütunluk yer aç, 1.sini kullan\n# plt.plot(x, y)\nprint('Ekranın sol yarısına grafik çizildi.')"
+    },
+    {
+      "id": 2,
+      "title": "İkinci Grafiği Çizme",
+      "explanation": "Aynı kodda ikinci grafiğin yerini seçip çizimi yaparız.",
+      "default_code": "# plt.subplot(1, 2, 2) # 2 sütunlu yerin 2.sine geç\n# plt.plot(x2, y2)\nprint('Ekranın sağ yarısına ikinci grafik çizildi.')"
+    },
+    {
+      "id": 3,
+      "title": "Alt Alta Alt Grafikler",
+      "explanation": "Grafikleri yan yana değil alt alta koymak isterseniz satır sayısını artırırsınız.",
+      "default_code": "# plt.subplot(2, 1, 1) # Üstteki grafik\n# plt.subplot(2, 1, 2) # Alttaki grafik\nprint('Grafikler dikey olarak dizildi.')"
+    },
+    {
+      "id": 4,
+      "title": "Alt Grafiklere Başlık",
+      "explanation": "Her küçük grafiğin kendi title()'ı olabilir.",
+      "default_code": "# plt.subplot(1, 2, 1)\n# plt.title('SATIŞLAR')\n# plt.subplot(1, 2, 2)\n# plt.title('GELİRLER')\nprint('Her grafiğin tepesinde kendi başlığı yazar.')"
+    },
+    {
+      "id": 5,
+      "title": "Süper Başlık (suptitle)",
+      "explanation": "Tüm tuvali (içindeki tüm alt grafikleri) kapsayan en tepeye bir Ana Başlık ekler.",
+      "default_code": "# plt.suptitle('2023 YILI ÖZETİ')\nprint('Ekranın en üstüne dev bir başlık atıldı.')"
+    }
+  ]
+}

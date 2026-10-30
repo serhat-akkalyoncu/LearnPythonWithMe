@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Get Started",
+  "order": 56,
+  "description": "Matplotlib kurulumu ve ilk grafik çiziminin temellerini öğrenin.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Kurulum ve Sürüm Kontrolü",
+      "explanation": "Matplotlib, pip install matplotlib komutuyla kurulur. Sürümünü __version__ ile kontrol ederiz.",
+      "default_code": "import matplotlib\nprint('Matplotlib Sürümü:', matplotlib.__version__)"
+    },
+    {
+      "id": 2,
+      "title": "İki Nokta Çizmek",
+      "explanation": "(1, 3) noktasından (8, 10) noktasına bir çizgi çekmek istiyoruz.",
+      "default_code": "# x_noktalari = [1, 8]\n# y_noktalari = [3, 10]\n# plt.plot(x_noktalari, y_noktalari)\n# plt.show()\nprint('(1,3) ile (8,10) arasına düz bir çizgi çekildi.')"
+    },
+    {
+      "id": 3,
+      "title": "Sadece Noktaları (Marker) Çizmek",
+      "explanation": "Noktalar arasında çizgi olmadan sadece noktaları işaretlemek için 'o' parametresi kullanılır.",
+      "default_code": "# plt.plot(x_noktalari, y_noktalari, 'o')\nprint(\"plt.plot(x, y, 'o') ile sadece köşe noktalar görünür, çizgi olmaz.\")"
+    },
+    {
+      "id": 4,
+      "title": "Birden Fazla Nokta",
+      "explanation": "X ve Y dizilerine istediğimiz kadar nokta verip zig-zaglar çizebiliriz.",
+      "default_code": "# x = [1, 2, 6, 8]\n# y = [3, 8, 1, 10]\n# plt.plot(x, y)\nprint('Sırasıyla noktalar birleştirilir ve grafik oluşturulur.')"
+    },
+    {
+      "id": 5,
+      "title": "Sadece Y Ekseni Verilirse?",
+      "explanation": "Sadece y değerlerini verirseniz, x eksenini otomatik olarak [0, 1, 2, 3...] olarak kendisi doldurur.",
+      "default_code": "# y = [3, 8, 1, 10, 5]\n# plt.plot(y)\nprint('X ekseni otomatik 0,1,2,3,4 değerlerini aldı.')"
+    }
+  ]
+}

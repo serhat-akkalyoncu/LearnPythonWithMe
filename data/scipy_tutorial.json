@@ -1,0 +1,37 @@
+{
+  "topic": "SciPy Tutorial",
+  "order": 53,
+  "description": "SciPy (Scientific Python), NumPy üzerine kurulu matematiksel, bilimsel ve mühendislik hesaplamaları için kullanılan bir kütüphanedir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "SciPy Nedir?",
+      "explanation": "Optimizasyon, lineer cebir, integrasyon, sinyal işleme gibi karmaşık işlemleri çözer.",
+      "default_code": "import scipy\nprint('SciPy Sürümü:', scipy.__version__)\nprint('SciPy, bilimsel hesaplamalar için alt modüller içerir.')"
+    },
+    {
+      "id": 2,
+      "title": "Sabitler (Constants)",
+      "explanation": "SciPy fiziksel ve matematiksel sabitleri hazır olarak sunar (Örn: Pi sayısı, ışık hızı).",
+      "default_code": "from scipy import constants\nprint('Pi Sayısı:', constants.pi)\nprint('Altın Oran:', constants.golden)\nprint('Işık Hızı (m/s):', constants.c)"
+    },
+    {
+      "id": 3,
+      "title": "Birim Çeviriciler",
+      "explanation": "SciPy içinde bayttan kilobayta, fahrenheit'tan celcius'a birçok dönüşüm katsayısı bulunur.",
+      "default_code": "from scipy import constants\nprint('1 İnç kaç metredir?', constants.inch)\nprint('1 Litre kaç metreküptür?', constants.liter)\nprint('1 Gram kaç kilogramdır?', constants.gram)"
+    },
+    {
+      "id": 4,
+      "title": "Optimizasyon (Kök Bulma)",
+      "explanation": "Bir denklemin sonucunu sıfır yapan değeri (kök) bulmak için optimize modülü kullanılır.",
+      "default_code": "from scipy.optimize import root\nfrom math import cos\ndef denklem(x):\n  return x + cos(x)\n\nsonuc = root(denklem, 0)\nprint('Kök:', sonuc.x)"
+    },
+    {
+      "id": 5,
+      "title": "Seyrek Veriler (Sparse Data)",
+      "explanation": "İçinde çok fazla sıfır barındıran veri kümelerinde belleği korumak için sıkıştırma sağlar.",
+      "default_code": "import numpy as np\nfrom scipy.sparse import csr_matrix\ndizi = np.array([0, 0, 0, 0, 1, 0, 2, 0, 0])\nseyrek = csr_matrix(dizi)\nprint(seyrek) # Sadece 0 olmayan değerlerin yerini tutar"
+    }
+  ]
+}

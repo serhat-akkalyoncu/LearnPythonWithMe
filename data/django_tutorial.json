@@ -1,0 +1,37 @@
+{
+  "topic": "Django Tutorial",
+  "order": 54,
+  "description": "Django, hızlı geliştirme ve temiz tasarım için kullanılan yüksek seviyeli bir Python web framework'üdür. Güvenli ve ölçeklenebilir web siteleri oluşturur.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Django Nedir?",
+      "explanation": "Django, her şeyi sıfırdan yazmak yerine size hazır bir altyapı (veritabanı yönetimi, admin paneli) sunar.",
+      "default_code": "print('Django MVT (Model-View-Template) mimarisini kullanır.')\nprint('Bu editör ortamında doğrudan web sunucusu başlatılamaz, ancak mantığı öğreneceğiz.')"
+    },
+    {
+      "id": 2,
+      "title": "Model (Veritabanı Yapısı)",
+      "explanation": "Django'da veritabanı tabloları Python sınıfları olarak yazılır (ORM sistemi). SQL yazmanıza gerek kalmaz.",
+      "default_code": "# models.py dosyasında:\n# from django.db import models\n\n# class Urun(models.Model):\n#     isim = models.CharField(max_length=100)\n#     fiyat = models.IntegerField()\nprint('Modeller veritabanını temsil eder.')"
+    },
+    {
+      "id": 3,
+      "title": "View (Görünüm / İş Mantığı)",
+      "explanation": "Kullanıcıdan gelen istekleri (URL) alıp, ilgili veriyi çeken ve ekrana (Template) gönderen fonksiyondur.",
+      "default_code": "# views.py dosyasında:\n# from django.shortcuts import render\n# from django.http import HttpResponse\n\n# def ana_sayfa(request):\n#     return HttpResponse('Django Web Siteme Hoş Geldiniz!')\nprint('Views, istekleri işler ve yanıt döndürür.')"
+    },
+    {
+      "id": 4,
+      "title": "Template (Şablon / HTML)",
+      "explanation": "Django'da HTML dosyaları içine Python kodları (değişkenler, döngüler) süslü parantezlerle eklenebilir.",
+      "default_code": "# index.html dosyasında:\n# <h1>Hoş Geldin, {{ kullanici_adi }}</h1>\n# {% for urun in urunler %}\n#    <li>{{ urun.isim }}</li>\n# {% endfor %}\nprint('Templates, dinamik HTML sayfaları oluşturur.')"
+    },
+    {
+      "id": 5,
+      "title": "Admin Paneli",
+      "explanation": "Django'nun en güçlü yanlarından biri, sadece 2 satır kodla hazır ve güvenli bir yönetim paneli sunmasıdır.",
+      "default_code": "# admin.py dosyasında:\n# from django.contrib import admin\n# from .models import Urun\n\n# admin.site.register(Urun)\nprint('Admin paneli sayesinde veritabanına arayüzden kayıt eklenebilir.')"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Markers",
+  "order": 59,
+  "description": "Grafikteki her bir veri noktasının (köşelerin) nasıl görüneceğini belirten şekillere marker denir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Marker Kullanımı",
+      "explanation": "plot içine 'marker' parametresi vererek noktalara şekil verebiliriz. 'o' (yuvarlak), '*' (yıldız) vb.",
+      "default_code": "# plt.plot(y, marker = 'o')\nprint('Köşe noktalarına içi dolu daireler yerleştirildi.')"
+    },
+    {
+      "id": 2,
+      "title": "Format Strings (fmt)",
+      "explanation": "Marker, Çizgi Stili ve Rengi tek bir metinle (fmt) kısaca yazabilirsiniz: marker|line|color",
+      "default_code": "# plt.plot(y, 'o:r')\nprint(\"'o:r' anlamı: Yuvarlak marker (o), Noktalı çizgi (:), Kırmızı renk (r)\")"
+    },
+    {
+      "id": 3,
+      "title": "Marker Boyutu (ms)",
+      "explanation": "Noktaların büyüklüğünü 'markersize' veya kısaca 'ms' ile ayarlarız.",
+      "default_code": "# plt.plot(y, marker = 'o', ms = 20)\nprint('Noktalar 20 piksel büyüklüğünde oldu.')"
+    },
+    {
+      "id": 4,
+      "title": "Marker Kenar Rengi (mec)",
+      "explanation": "Noktaların etrafındaki çerçevenin rengini değiştirmek için 'markeredgecolor' veya 'mec' kullanılır.",
+      "default_code": "# plt.plot(y, marker = 'o', ms = 20, mec = 'r')\nprint('İçi boş (veya mavi), etrafı kırmızı çizgili noktalar elde edilir.')"
+    },
+    {
+      "id": 5,
+      "title": "Marker İç Rengi (mfc)",
+      "explanation": "Noktaların içinin rengini belirlemek için 'markerfacecolor' veya 'mfc' kullanılır.",
+      "default_code": "# plt.plot(y, marker = 'o', ms = 20, mfc = 'r')\nprint('Noktaların içi tamamen kırmızıya boyandı.')"
+    }
+  ]
+}

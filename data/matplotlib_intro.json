@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Intro",
+  "order": 55,
+  "description": "Matplotlib, Python'da veri görselleştirmesi (grafik, tablo, çizim) yapmak için kullanılan düşük seviyeli bir kütüphanedir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Matplotlib Nedir?",
+      "explanation": "Sayısal verileri anlamlandırmak için görsel grafiklere (çizgi, çubuk, pasta dilimi vb.) dönüştürmemizi sağlar.",
+      "default_code": "print('Matplotlib temel olarak 2 boyutlu grafikler üretir.')\nprint('Arayüzümüz grafik penceresi açmayı desteklemediği için kod mantığını simüle edeceğiz.')"
+    },
+    {
+      "id": 2,
+      "title": "Pyplot Alt Modülü",
+      "explanation": "Matplotlib'in içindeki pyplot modülü, grafiklerin çizilmesini sağlayan temel araçtır. Genellikle 'plt' kısaltmasıyla içe aktarılır.",
+      "default_code": "import matplotlib.pyplot as plt\nprint('pyplot modülü başarıyla içe aktarıldı.')"
+    },
+    {
+      "id": 3,
+      "title": "Basit Çizgi Mantığı",
+      "explanation": "X ve Y eksenlerindeki noktaları belirleyip plot() fonksiyonu ile birleştiririz.",
+      "default_code": "# import matplotlib.pyplot as plt\n# import numpy as np\n# x = np.array([0, 6])\n# y = np.array([0, 250])\n# plt.plot(x, y)\n# plt.show()\nprint('plot() çizimi yapar, show() ise ekranda gösterir.')"
+    },
+    {
+      "id": 4,
+      "title": "Neden Görselleştirme?",
+      "explanation": "Büyük veri setlerindeki eğilimleri (trendleri) ve istisnaları tabloda sayılara bakarak görmek zordur, grafikler bunu saniyeler içinde gösterir.",
+      "default_code": "print('Veri bilimi ve analizinin en önemli adımı görselleştirmedir.')"
+    },
+    {
+      "id": 5,
+      "title": "Alternatif Kütüphaneler",
+      "explanation": "Matplotlib temeldir ancak Seaborn veya Plotly gibi kütüphaneler onun üzerine kurularak daha şık grafikler sunar.",
+      "default_code": "print('Matplotlib -> Temel\\nSeaborn -> İstatistiksel/Şık\\nPlotly -> Etkileşimli (Hover, Zoom)')"
+    }
+  ]
+}

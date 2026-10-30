@@ -1,0 +1,37 @@
+{
+  "topic": "Pandas Tutorial",
+  "order": 52,
+  "description": "Pandas, veri analizi ve manipülasyonu için kullanılır. Verileri tablolar (DataFrame) halinde tutar ve Excel benzeri işlemler yapmayı sağlar.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Pandas Series",
+      "explanation": "Series, tıpkı bir tablodaki tek bir sütun gibi tek boyutlu bir dizidir.",
+      "default_code": "import pandas as pd\nveriler = [10, 20, 30]\nseri = pd.Series(veriler, index=['x', 'y', 'z'])\nprint(seri)"
+    },
+    {
+      "id": 2,
+      "title": "Pandas DataFrame",
+      "explanation": "DataFrame, satır ve sütunlardan oluşan iki boyutlu bir veri yapısıdır (Tablo).",
+      "default_code": "import pandas as pd\nveri = {\n  'Arabalar': ['BMW', 'Volvo', 'Ford'],\n  'Gecis': [3, 7, 2]\n}\ntablo = pd.DataFrame(veri)\nprint(tablo)"
+    },
+    {
+      "id": 3,
+      "title": "Satır Bulma (loc)",
+      "explanation": "DataFrame içinden belirli bir satırı (veya satırları) getirmek için loc özelliği kullanılır.",
+      "default_code": "import pandas as pd\nveri = {'isim': ['Ali', 'Ayşe'], 'yas': [25, 30]}\ndf = pd.DataFrame(veri)\nprint(df.loc[0]) # Sadece 0. indeksteki satırı getir"
+    },
+    {
+      "id": 4,
+      "title": "Veri Analizi (Head & Tail)",
+      "explanation": "Büyük veri setlerinin sadece başını (head) veya sonunu (tail) görmek için kullanılır.",
+      "default_code": "import pandas as pd\n# Örnek DataFrame\ndf = pd.DataFrame({'Sayilar': range(1, 101)})\nprint('İlk 5 Satır:\\n', df.head())\nprint('\\nSon 3 Satır:\\n', df.tail(3))"
+    },
+    {
+      "id": 5,
+      "title": "Veri Temizleme",
+      "explanation": "Pandas ile boş hücreleri (NaN) bulabilir ve silebilir veya varsayılan bir değerle doldurabilirsiniz.",
+      "default_code": "import pandas as pd\nimport numpy as np\nveri = {'A': [1, 2, np.nan], 'B': [4, np.nan, 6]}\ndf = pd.DataFrame(veri)\nprint('Orijinal:\\n', df)\nprint('\\nBoşluklar silinmiş:\\n', df.dropna())"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "topic": "NumPy Tutorial",
+  "order": 51,
+  "description": "NumPy, Python'da bilimsel hesaplamalar ve çok boyutlu diziler (array) ile çalışmak için kullanılan en temel kütüphanedir.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "NumPy Nedir?",
+      "explanation": "NumPy, geleneksel Python listelerinden 50 kata kadar daha hızlı çalışabilen dizi nesneleri sunar.",
+      "default_code": "import numpy as np\n# np.array() ile dizi oluşturulur\ndizi = np.array([1, 2, 3, 4, 5])\nprint(dizi)"
+    },
+    {
+      "id": 2,
+      "title": "Çok Boyutlu Diziler (0D, 1D, 2D)",
+      "explanation": "Matrisler gibi çok boyutlu verileri temsil etmek için kullanılır.",
+      "default_code": "import numpy as np\ndizi2D = np.array([[1, 2, 3], [4, 5, 6]])\nprint(dizi2D)\nprint('Boyut sayısı:', dizi2D.ndim)"
+    },
+    {
+      "id": 3,
+      "title": "Dizi İndeksleme",
+      "explanation": "Dizideki belirli bir elemana erişmek için indeksler kullanılır (0'dan başlar).",
+      "default_code": "import numpy as np\ndizi = np.array([10, 20, 30, 40])\nprint('İlk eleman:', dizi[0])\nprint('İkinci ve üçüncü eleman toplamı:', dizi[1] + dizi[2])"
+    },
+    {
+      "id": 4,
+      "title": "Dizi Dilimleme (Slicing)",
+      "explanation": "Belirli bir aralıktaki elemanları kesip almak için [başlangıç:bitiş:adım] kullanılır.",
+      "default_code": "import numpy as np\ndizi = np.array([1, 2, 3, 4, 5, 6, 7])\nprint(dizi[1:5]) # İndeks 1'den 5'e kadar (5 hariç)"
+    },
+    {
+      "id": 5,
+      "title": "Dizileri Şekillendirme (Reshape)",
+      "explanation": "Bir dizinin boyutlarını değiştirebiliriz (Örn: 1 boyutlu 6 elemanlı diziyi 2x3 matrise çevirmek).",
+      "default_code": "import numpy as np\ndizi = np.array([1, 2, 3, 4, 5, 6])\nyeni_dizi = dizi.reshape(2, 3)\nprint(yeni_dizi)"
+    }
+  ]
+}

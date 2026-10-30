@@ -1,0 +1,37 @@
+{
+  "topic": "Matplotlib Histograms",
+  "order": 66,
+  "description": "Histogram grafiği, verilerin frekansını (hangi sayı aralığından kaç tane olduğunu) gösteren grafiktir. Çubuk grafiğine benzer ama bitişik çizilirler.",
+  "examples": [
+    {
+      "id": 1,
+      "title": "Histogram Çizimi (hist)",
+      "explanation": "plt.hist(veri) fonksiyonu, verilen tek boyutlu dizideki rakamların dağılımını (frekansını) çizer.",
+      "default_code": "# import numpy as np\n# x = np.random.normal(170, 10, 250) # Boy ortalaması 170 olan 250 kişi\n# plt.hist(x)\nprint('Orta kısımların en yüksek olduğu Çan Eğrisi benzeri bir sütun grafiği çıkar.')"
+    },
+    {
+      "id": 2,
+      "title": "Kutu Sayısı (Bins)",
+      "explanation": "Histogramda verilerin kaç farklı kutuya (aralığa/sütuna) bölüneceğini bins parametresi belirler.",
+      "default_code": "# plt.hist(x, bins=20)\nprint('Grafik 20 adet dikey sütuna bölünür, daha detaylı bir görünüm sunar.')"
+    },
+    {
+      "id": 3,
+      "title": "Normal Dağılım Nedir?",
+      "explanation": "Doğada çoğu şey (insan boyu, sınav notları) ortalamada toplanır, uçlarda azalır. Histogram bunu kanıtlamanın en iyi yoludur.",
+      "default_code": "print('Histogramlar makine öğrenmesinde verinin sağlıklı olup olmadığını anlamak için çok kullanılır.')"
+    },
+    {
+      "id": 4,
+      "title": "Kümülatif Histogram",
+      "explanation": "Her sütunun kendisinden öncekilerin toplamını da ekleyerek basamak basamak yükselmesini sağlar.",
+      "default_code": "# plt.hist(x, cumulative=True)\nprint('Grafik sürekli yükselen bir merdiven şeklini alır.')"
+    },
+    {
+      "id": 5,
+      "title": "Birden Fazla Histogram",
+      "explanation": "Aynı grafik üzerine iki farklı veri kümesinin histogramını yarı saydam (alpha) yaparak üst üste çizebilirsiniz.",
+      "default_code": "print('İki grubun (örn A ve B şubesi) not dağılımlarını kıyaslamak için üst üste çizdirilir.')"
+    }
+  ]
+}
